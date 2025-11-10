@@ -5,7 +5,7 @@ import pranatropfenCollection from "@/assets/workshop-pranatropfen-collection.jp
 import pranatropfenHandReal from "@/assets/pranatropfen-hand-real.jpg";
 import workshopSmallGemstones from "@/assets/workshop-small-gemstones.jpg";
 import workshopBlackWhiteTurquoise from "@/assets/workshop-black-white-turquoise.jpg";
-import workshopEnergyActivation from "@/assets/workshop-energy-activation.jpg";
+import workshopSpiritualCharging from "@/assets/workshop-spiritual-charging.jpg";
 
 export const HandwerkSection = () => {
   return (
@@ -86,16 +86,16 @@ export const HandwerkSection = () => {
           {/* Final Moment - Full Width */}
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-large)] group lg:col-span-2">
             <img
-              src={workshopEnergyActivation}
-              alt="Energetische Aktivierung der fertigen Pranatropfen mit Klangschale und Kristallen"
+              src={workshopSpiritualCharging}
+              alt="Energetische Aktivierung der fertigen Pranatropfen mit Kerzenlicht und Kristallen"
               className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-10">
                 <h3 className="text-3xl font-bold text-background mb-3">Die Vollendung</h3>
                 <p className="text-lg text-background/90 max-w-2xl">
-                  Nach Tagen des Aushärtens und liebevoller Politur werden die fertigen Pranatropfen energetisch aktiviert. 
-                  Mit Klangschalen, Kristallen und achtsamer Intention wird jedes Stück mit positiver Energie aufgeladen – bereit, seinen Träger zu begleiten.
+                  Nach Tagen des Aushärtens und liebevoller Politur werden die fertigen Pranatropfen energetisch aufgeladen. 
+                  Im Kerzenschein, umgeben von Kristallen und achtsamer Intention, erhält jedes Stück seine einzigartige energetische Signatur – bereit, seinen Träger zu begleiten.
                 </p>
               </div>
             </div>
