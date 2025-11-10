@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { HexagonPattern } from "./SacredGeometry";
+import { Instagram, Heart, Users } from "lucide-react";
 import communityBg from "@/assets/community-bg.jpg";
 
 export const CommunitySection = () => {
@@ -20,23 +21,66 @@ export const CommunitySection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-background mb-6 leading-tight">
-            Willst auch du Teil der Community werden?
+            Werde Teil unserer Community
           </h2>
           <p className="text-lg md:text-xl text-background/90 mb-8 leading-relaxed">
-            Bereits über 20.000 Menschen sind von unseren Prana-Produkten
-            fasziniert. Werde auch Du Teil unserer Gemeinschaft und finde deinen
-            persönlichen Pranakristall® oder Pranatropfen®.
+            Über 20.000 Menschen tragen bereits ihre Energie. Lass dich inspirieren, 
+            teile deine Erfahrungen und verbinde dich mit Gleichgesinnten.
           </p>
 
-          <Button
-            variant="hero"
-            size="lg"
-            className="bg-background text-foreground hover:bg-background/90"
-          >
-            Jetzt entdecken
-          </Button>
+          {/* Stats */}
+          <div className="grid grid-cols-3 gap-6 max-w-2xl mx-auto mb-10">
+            <div className="space-y-2">
+              <Users className="w-8 h-8 text-background mx-auto" strokeWidth={1.5} />
+              <p className="text-3xl font-bold text-background">20.000+</p>
+              <p className="text-sm text-background/80">Träger weltweit</p>
+            </div>
+            <div className="space-y-2">
+              <Heart className="w-8 h-8 text-background mx-auto" strokeWidth={1.5} />
+              <p className="text-3xl font-bold text-background">100%</p>
+              <p className="text-sm text-background/80">Handgefertigt</p>
+            </div>
+            <div className="space-y-2">
+              <Instagram className="w-8 h-8 text-background mx-auto" strokeWidth={1.5} />
+              <p className="text-3xl font-bold text-background">15k+</p>
+              <p className="text-sm text-background/80">Follower</p>
+            </div>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
+              variant="hero"
+              size="lg"
+              className="bg-background text-foreground hover:bg-background/90"
+            >
+              Zur Kollektion
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="bg-background/10 backdrop-blur-sm text-background border-background/30 hover:bg-background/20"
+              asChild
+            >
+              <a 
+                href="https://instagram.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <Instagram className="w-5 h-5" />
+                Folge uns auf Instagram
+              </a>
+            </Button>
+          </div>
+
+          {/* Instagram Hashtag */}
+          <p className="mt-6 text-background/70 text-sm">
+            Teile deine Energie mit{" "}
+            <span className="font-semibold text-background">#pranatropfen</span>
+          </p>
         </div>
       </div>
     </section>
