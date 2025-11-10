@@ -4,7 +4,7 @@ import workshopResinPouring from "@/assets/workshop-resin-pouring.jpg";
 import pranatropfenCollection from "@/assets/workshop-pranatropfen-collection.jpg";
 import pranatropfenHandReal from "@/assets/pranatropfen-hand-real.jpg";
 import workshopSmallGemstones from "@/assets/workshop-small-gemstones.jpg";
-import workshopTweezersMold from "@/assets/workshop-tweezers-mold.jpg";
+import workshopMultiStones from "@/assets/workshop-multi-stones.jpg";
 
 export const HandwerkSection = () => {
   return (
@@ -68,15 +68,15 @@ export const HandwerkSection = () => {
 
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-medium)] group">
             <img
-              src={workshopTweezersMold}
-              alt="Präzises Einlegen eines Kristalls mit Pinzette in die Tropfenform"
+              src={workshopMultiStones}
+              alt="Einlegen mehrerer kleiner Edelsteine (Türkis, Pyrit, schwarze Steine) und Goldflakes in die Tropfenform"
               className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-2xl font-bold text-background mb-2">Schritt 2: Platzierung</h3>
+                <h3 className="text-2xl font-bold text-background mb-2">Schritt 2: Komposition</h3>
                 <p className="text-base text-background/90">
-                  Mit Pinzette und ruhiger Hand wird jeder Kristall präzise in der Tropfenform positioniert.
+                  Türkis, Pyrit, schwarze Steine und Goldflakes werden Stück für Stück komponiert.
                 </p>
               </div>
             </div>
