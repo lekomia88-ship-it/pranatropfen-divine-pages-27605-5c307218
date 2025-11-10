@@ -53,14 +53,14 @@ export const HandwerkSection = () => {
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-medium)] group">
             <img
               src={workshopSmallGemstones}
-              alt="Handwerkliche Auswahl kleiner Edelstein-Chips und Kristalle"
+              alt="Handwerkliche Auswahl natürlicher Edelsteine und Kristalle"
               className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-2xl font-bold text-background mb-2">Schritt 1: Auswahl</h3>
+                <h3 className="text-2xl font-bold text-background mb-2">Schritt 1: Die Auswahl</h3>
                 <p className="text-base text-background/90">
-                  Kleine Edelstein-Chips werden intuitiv ausgewählt – für ihre energetische Qualität und Schönheit.
+                  Jeder Edelstein wird sorgfältig nach Farbe, Form und energetischer Schwingung ausgewählt – intuitiv und mit Bedacht.
                 </p>
               </div>
             </div>
@@ -69,14 +69,30 @@ export const HandwerkSection = () => {
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-medium)] group">
             <img
               src={workshopBlackWhiteTurquoise}
-              alt="Komposition aus schwarzen, weißen und türkisfarbenen Edelsteinen mit Goldflakes in der Tropfenform"
+              alt="Kunstvolle Komposition von Edelsteinen mit Goldakzenten in der Tropfenform"
               className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-2xl font-bold text-background mb-2">Schritt 2: Komposition</h3>
+                <h3 className="text-2xl font-bold text-background mb-2">Schritt 2: Die Komposition</h3>
                 <p className="text-base text-background/90">
-                  Schwarze, weiße und türkisfarbene Steine mit Goldflakes werden kunstvoll komponiert.
+                  Mit Pinzette und ruhiger Hand entsteht ein harmonisches Arrangement – jeder Stein findet seinen perfekten Platz.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-medium)] group">
+            <img
+              src={pranatropfenCollection}
+              alt="Vielfalt fertig ausgehärteter Pranatropfen in verschiedenen Farbkombinationen"
+              className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent">
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <h3 className="text-2xl font-bold text-background mb-2">Schritt 3: Die Vollendung</h3>
+                <p className="text-base text-background/90">
+                  Nach Tagen des Aushärtens wird jeder Tropfen von Hand geschliffen und poliert, bis er perfekt glänzt.
                 </p>
               </div>
             </div>
