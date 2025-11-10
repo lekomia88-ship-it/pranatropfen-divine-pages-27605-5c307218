@@ -4,7 +4,7 @@ import modelImage2 from "@/assets/model-jewelry-2.jpg";
 
 export const StorySection = () => {
   return (
-    <section id="story" className="py-24 bg-secondary/30 relative overflow-hidden">
+    <section id="story" className="py-16 bg-secondary/30 relative overflow-hidden">
       {/* Playful moon hanging on a chain in background */}
       <div className="absolute top-20 right-32 opacity-10">
         <svg width="80" height="120" viewBox="0 0 80 120" className="text-gold">

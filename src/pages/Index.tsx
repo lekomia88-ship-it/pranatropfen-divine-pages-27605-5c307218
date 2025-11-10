@@ -7,6 +7,7 @@ import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { FAQSection } from "@/components/FAQSection";
 import { NewsletterSection } from "@/components/NewsletterSection";
 import { CommunitySection } from "@/components/CommunitySection";
+import { ScrollToProductsButton } from "@/components/ScrollToProductsButton";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <FAQSection />
       <NewsletterSection />
       <CommunitySection />
+      <ScrollToProductsButton />
     </main>
   );
 };
