@@ -2,8 +2,10 @@ import { SacredTriangles, FlowerOfLife } from "./SacredGeometry";
 import { MoonSymbol, SunSymbol } from "./CelestialSymbols";
 import pranatropfenPour from "@/assets/workshop-pranatropfen-pour.jpg";
 import pranatropfenCollection from "@/assets/workshop-pranatropfen-collection.jpg";
-import pranatropfenDetail from "@/assets/pranatropfen-detail.jpg";
+import pranatropfenProductReal from "@/assets/pranatropfen-product-real.jpg";
 import workshopImage from "@/assets/workshop-gemstones.jpg";
+import workshopGemstoneSelection from "@/assets/workshop-gemstone-selection.jpg";
+import workshopTweezersPlacement from "@/assets/workshop-tweezers-placement.jpg";
 
 export const HandwerkSection = () => {
   return (
@@ -51,8 +53,8 @@ export const HandwerkSection = () => {
           {/* Process Cards */}
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-medium)] group">
             <img
-              src={workshopImage}
-              alt="Handverlesene Edelsteine und Materialien"
+              src={workshopGemstoneSelection}
+              alt="Handwerkliche Auswahl verschiedener Edelsteine und Kristalle"
               className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent">
@@ -67,15 +69,15 @@ export const HandwerkSection = () => {
 
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-medium)] group">
             <img
-              src={pranatropfenCollection}
-              alt="Vielfalt an Pranatropfen in verschiedenen Farben und mit unterschiedlichen Edelsteinen"
+              src={workshopTweezersPlacement}
+              alt="Präzises Platzieren von Edelsteinen mit Pinzette in die Harzform"
               className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-2xl font-bold text-background mb-2">Schritt 2: Vielfalt</h3>
+                <h3 className="text-2xl font-bold text-background mb-2">Schritt 2: Platzierung</h3>
                 <p className="text-base text-background/90">
-                  Von Amethyst bis Rosenquarz – jede Farbe trägt ihre eigene energetische Signatur.
+                  Mit Pinzette und ruhiger Hand werden die Steine präzise im Harz positioniert.
                 </p>
               </div>
             </div>
@@ -86,8 +88,8 @@ export const HandwerkSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto mb-16">
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-large)]">
             <img
-              src={pranatropfenDetail}
-              alt="Detailaufnahme eines fertigen Pranatropfen-Anhängers mit Amethyst und Goldverzierungen"
+              src={pranatropfenProductReal}
+              alt="Echter Pranatropfen-Anhänger mit eingebettetem Amethyst-Kristall und Goldakzenten"
               className="w-full h-[600px] object-cover"
             />
           </div>
