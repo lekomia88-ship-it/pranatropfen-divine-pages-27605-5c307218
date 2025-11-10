@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { FlowerOfLife } from "./SacredGeometry";
+import { SacredTriangles } from "./SacredGeometry";
 
 const faqs = [
   {
@@ -51,10 +51,9 @@ const faqs = [
 
 export const FAQSection = () => {
   return (
-    <section className="py-24 bg-secondary/30 relative overflow-hidden">
-      {/* Subtle Background Geometry */}
-      <FlowerOfLife className="absolute top-20 right-[-100px] w-[400px] h-[400px] text-primary opacity-[0.12]" />
-      <FlowerOfLife className="absolute bottom-20 left-[-100px] w-[400px] h-[400px] text-primary opacity-[0.12]" />
+    <section className="py-24 bg-background relative overflow-hidden">
+      {/* Single subtle background geometry */}
+      <SacredTriangles className="absolute bottom-[-120px] right-[-100px] w-[380px] h-[380px] text-primary opacity-[0.08]" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}

@@ -4,27 +4,9 @@ import modelImage2 from "@/assets/model-jewelry-2.jpg";
 
 export const StorySection = () => {
   return (
-    <section id="story" className="py-16 bg-gradient-to-br from-secondary/40 via-secondary/25 to-background relative overflow-hidden">
-      {/* Large decorative moon */}
-      <MoonSymbol className="absolute top-[-80px] right-[-60px] w-[280px] h-[280px] text-gold opacity-[0.18]" />
-      
-      {/* Playful moon hanging on a chain in background */}
-      <div className="absolute top-20 left-1/4 opacity-[0.20]">
-        <svg width="80" height="120" viewBox="0 0 80 120" className="text-gold">
-          {/* Delicate chain */}
-          <line x1="40" y1="0" x2="40" y2="60" stroke="currentColor" strokeWidth="1.5" strokeDasharray="3 3" />
-          {/* Small hook at top */}
-          <path d="M 37 0 Q 40 -2 43 0" fill="none" stroke="currentColor" strokeWidth="1.5" />
-          {/* Moon hanging */}
-          <g transform="translate(40, 60)">
-            <MoonSymbol className="w-16 h-16" />
-          </g>
-        </svg>
-      </div>
-
-      {/* Sun symbols scattered */}
-      <SunSymbol className="absolute top-32 left-24 w-20 h-20 text-gold-light opacity-[0.25]" />
-      <SunSymbol className="absolute bottom-[-40px] right-20 w-[180px] h-[180px] text-gold opacity-[0.15]" />
+    <section id="story" className="py-20 bg-gradient-to-br from-secondary/30 to-secondary/10 relative overflow-hidden">
+      {/* Single large decorative sun in corner */}
+      <SunSymbol className="absolute bottom-[-100px] right-[-80px] w-[240px] h-[240px] text-gold opacity-[0.10]" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}

@@ -31,12 +31,9 @@ export const NewsletterSection = () => {
   };
 
   return (
-    <section className="py-24 bg-gradient-to-b from-background via-secondary/20 to-background relative overflow-hidden">
-      {/* Decorative Elements */}
-      <FlowerOfLife className="absolute top-[-150px] left-1/4 w-[400px] h-[400px] text-primary opacity-[0.10]" />
-      <MoonSymbol className="absolute top-12 right-16 w-20 h-20 text-gold opacity-[0.13]" />
-      <SunSymbol className="absolute bottom-12 left-20 w-16 h-16 text-gold-light opacity-[0.14]" />
-      <Sparkles className="absolute bottom-16 right-1/4 w-16 h-16 text-gold opacity-[0.15]" />
+    <section className="py-24 bg-gradient-to-b from-secondary/15 to-background relative overflow-hidden">
+      {/* Single decorative element */}
+      <SunSymbol className="absolute top-[-70px] left-[-60px] w-[180px] h-[180px] text-gold-light opacity-[0.09]" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl mx-auto">

@@ -32,11 +32,9 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
-      {/* Subtle background elements */}
-      <SacredTriangles className="absolute top-[-100px] right-[-80px] w-[300px] h-[300px] text-primary opacity-[0.10]" />
-      <MoonSymbol className="absolute top-1/3 left-8 w-20 h-20 text-gold opacity-[0.12]" />
-      <SunSymbol className="absolute bottom-1/4 right-12 w-16 h-16 text-gold-light opacity-[0.13]" />
+    <section className="py-24 bg-gradient-to-b from-secondary/20 to-secondary/10 relative overflow-hidden">
+      {/* Single subtle moon */}
+      <MoonSymbol className="absolute top-[-80px] right-[-70px] w-[200px] h-[200px] text-gold opacity-[0.08]" />
       
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
