@@ -51,10 +51,10 @@ const faqs = [
 
 export const FAQSection = () => {
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
+    <section className="py-24 bg-secondary/30 relative overflow-hidden">
       {/* Subtle Background Geometry */}
-      <FlowerOfLife className="absolute top-20 right-[-100px] w-[400px] h-[400px] text-primary opacity-[0.04]" />
-      <FlowerOfLife className="absolute bottom-20 left-[-100px] w-[400px] h-[400px] text-primary opacity-[0.04]" />
+      <FlowerOfLife className="absolute top-20 right-[-100px] w-[400px] h-[400px] text-primary opacity-[0.05]" />
+      <FlowerOfLife className="absolute bottom-20 left-[-100px] w-[400px] h-[400px] text-primary opacity-[0.05]" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}

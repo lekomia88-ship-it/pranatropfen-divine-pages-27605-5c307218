@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
-import { MoonSymbol } from "./CelestialSymbols";
+import { MoonSymbol, SunSymbol } from "./CelestialSymbols";
+import { FlowerOfLife } from "./SacredGeometry";
 import { Sparkles } from "lucide-react";
 
 export const NewsletterSection = () => {
@@ -30,10 +31,12 @@ export const NewsletterSection = () => {
   };
 
   return (
-    <section className="py-24 bg-gradient-to-b from-background to-secondary/20 relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-b from-background via-secondary/20 to-background relative overflow-hidden">
       {/* Decorative Elements */}
+      <FlowerOfLife className="absolute top-[-150px] left-1/4 w-[400px] h-[400px] text-primary opacity-[0.04]" />
       <MoonSymbol className="absolute top-12 right-16 w-20 h-20 text-gold opacity-[0.06]" />
-      <Sparkles className="absolute bottom-16 left-12 w-16 h-16 text-gold-light opacity-[0.08]" />
+      <SunSymbol className="absolute bottom-12 left-20 w-16 h-16 text-gold-light opacity-[0.07]" />
+      <Sparkles className="absolute bottom-16 right-1/4 w-16 h-16 text-gold opacity-[0.08]" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl mx-auto">

@@ -1,4 +1,5 @@
 import { Moon, Waves, Gem, Shield } from "lucide-react";
+import { FlowerOfLife } from "./SacredGeometry";
 
 const usps = [
   {
@@ -25,8 +26,12 @@ const usps = [
 
 export const USPSection = () => {
   return (
-    <section className="py-12 bg-background relative">
-      <div className="container mx-auto px-6">
+    <section className="py-12 bg-background relative overflow-hidden">
+      {/* Subtle Sacred Geometry */}
+      <FlowerOfLife className="absolute top-[-150px] left-[-100px] w-[350px] h-[350px] text-primary opacity-[0.03]" />
+      <FlowerOfLife className="absolute bottom-[-150px] right-[-100px] w-[350px] h-[350px] text-primary opacity-[0.03]" />
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {usps.map((usp, index) => (
             <div

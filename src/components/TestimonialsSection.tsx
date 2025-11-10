@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import { MoonSymbol, SunSymbol } from "./CelestialSymbols";
+import { SacredTriangles } from "./SacredGeometry";
 
 const testimonials = [
   {
@@ -30,8 +32,13 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <section className="py-24 bg-secondary/20 relative overflow-hidden">
-      <div className="container mx-auto px-6">
+    <section className="py-24 bg-background relative overflow-hidden">
+      {/* Subtle background elements */}
+      <SacredTriangles className="absolute top-[-100px] right-[-80px] w-[300px] h-[300px] text-primary opacity-[0.03]" />
+      <MoonSymbol className="absolute top-1/3 left-8 w-20 h-20 text-gold opacity-[0.05]" />
+      <SunSymbol className="absolute bottom-1/4 right-12 w-16 h-16 text-gold-light opacity-[0.06]" />
+      
+      <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
