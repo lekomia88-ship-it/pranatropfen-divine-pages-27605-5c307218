@@ -1,11 +1,10 @@
 import { SacredTriangles, FlowerOfLife } from "./SacredGeometry";
 import { MoonSymbol, SunSymbol } from "./CelestialSymbols";
 import workshopResinPouring from "@/assets/workshop-resin-pouring.jpg";
-import realResinPouringMold from "@/assets/real-resin-pouring-mold.jpg";
 import pranatropfenHandReal from "@/assets/pranatropfen-hand-real.jpg";
 import workshopSmallGemstones from "@/assets/workshop-small-gemstones.jpg";
 import workshopBlackWhiteTurquoise from "@/assets/workshop-black-white-turquoise.jpg";
-import realEnergyCharging from "@/assets/real-energy-charging.jpg";
+import workshopRitualActivation from "@/assets/workshop-ritual-activation.jpg";
 
 export const HandwerkSection = () => {
   return (
@@ -86,16 +85,16 @@ export const HandwerkSection = () => {
           {/* Final Moment - Full Width */}
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-large)] group lg:col-span-2">
             <img
-              src={realEnergyCharging}
-              alt="Energetische Aktivierung - diese einzigartige Energie fließt in den Pranatropfen"
+              src={workshopRitualActivation}
+              alt="Rituelle energetische Aktivierung der fertigen Pranatropfen mit Klangschale, Räucherstäbchen und Kerzenschein"
               className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-10">
                 <h3 className="text-3xl font-bold text-background mb-3">Die Vollendung</h3>
                 <p className="text-lg text-background/90 max-w-2xl">
-                  Nach Tagen des Aushärtens und liebevoller Politur werden die fertigen Pranatropfen energetisch aufgeladen. 
-                  Diese einzigartige Energie fließt in jedes Stück – mit achtsamer Intention wird jeder Pranatropfen zu einem kraftvollen Begleiter.
+                  Nach Tagen des Aushärtens und liebevoller Politur werden die fertigen Pranatropfen in einem achtsamen Ritual energetisch aufgeladen. 
+                  Im Kerzenschein, mit Klangschalen und Räucherwerk, erhält jedes Stück seine einzigartige energetische Signatur – bereit, seinen Träger zu begleiten.
                 </p>
               </div>
             </div>
