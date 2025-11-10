@@ -5,7 +5,7 @@ import pranatropfenCollection from "@/assets/workshop-pranatropfen-collection.jp
 import pranatropfenHandReal from "@/assets/pranatropfen-hand-real.jpg";
 import workshopSmallGemstones from "@/assets/workshop-small-gemstones.jpg";
 import workshopBlackWhiteTurquoise from "@/assets/workshop-black-white-turquoise.jpg";
-import workshopCompletion from "@/assets/workshop-completion.jpg";
+import workshopEnergyActivation from "@/assets/workshop-energy-activation.jpg";
 
 export const HandwerkSection = () => {
   return (
@@ -86,16 +86,16 @@ export const HandwerkSection = () => {
           {/* Final Moment - Full Width */}
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-large)] group lg:col-span-2">
             <img
-              src={workshopCompletion}
-              alt="Fertige polierte Pranatropfen bereit für ihre Träger"
+              src={workshopEnergyActivation}
+              alt="Energetische Aktivierung der fertigen Pranatropfen mit Klangschale und Kristallen"
               className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-10">
                 <h3 className="text-3xl font-bold text-background mb-3">Die Vollendung</h3>
                 <p className="text-lg text-background/90 max-w-2xl">
-                  Nach Tagen des Aushärtens wird jeder Tropfen von Hand geschliffen und poliert. 
-                  Währenddessen wird er mit positiver Intention und Achtsamkeit geladen – so erhält jeder Pranatropfen seine einzigartige energetische Signatur.
+                  Nach Tagen des Aushärtens und liebevoller Politur werden die fertigen Pranatropfen energetisch aktiviert. 
+                  Mit Klangschalen, Kristallen und achtsamer Intention wird jedes Stück mit positiver Energie aufgeladen – bereit, seinen Träger zu begleiten.
                 </p>
               </div>
             </div>
