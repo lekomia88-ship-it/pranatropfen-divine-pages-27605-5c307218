@@ -25,30 +25,30 @@ export const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center max-w-4xl">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-background leading-tight">
-          Schmuck mit <span className="font-extrabold">Bedeutung</span>
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-background leading-tight animate-fade-in-up">
+          Trage deine <span className="font-extrabold">Energie</span>
         </h1>
-        <p className="text-xl md:text-2xl mb-4 text-background/90 max-w-3xl mx-auto font-medium">
-          Handgefertigte <span className="font-bold">Design-Unikate</span> für bewusste Menschen
+        <p className="text-xl md:text-2xl mb-4 text-background/90 max-w-3xl mx-auto font-medium animate-fade-in-up" style={{ animationDelay: "200ms" }}>
+          Dein persönlicher <span className="font-bold">Energiebegleiter</span> – handgefertigt mit Intention
         </p>
-        <p className="text-base md:text-lg mb-10 text-background/80 max-w-2xl mx-auto font-light">
-          Trage, was dich <span className="font-semibold">stärkt</span>. Jeder Pranatropfen wird in liebevoller <span className="font-semibold">Handarbeit</span> gefertigt – aus Edelsteinen, Edelmetallen und klarem Kunstharz.
+        <p className="text-base md:text-lg mb-10 text-background/80 max-w-2xl mx-auto font-light animate-fade-in-up" style={{ animationDelay: "400ms" }}>
+          Spüre die Verbindung. Jeder Pranatropfen trägt eine <span className="font-semibold">einzigartige Schwingung</span> aus natürlichen Edelsteinen und wird in achtsamer <span className="font-semibold">Handarbeit</span> für dich erschaffen.
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: "600ms" }}>
           <Button
             variant="heroPrimary"
             onClick={() => scrollToSection("story")}
           >
-            Kollektion entdecken
+            Finde deine Energie
           </Button>
           <Button
             variant="outline"
             className="bg-background/10 backdrop-blur-sm text-background border-background/30 hover:bg-background/20"
             onClick={() => scrollToSection("handwerk")}
           >
-            Über die Handwerkskunst
+            Wie sie entstehen
           </Button>
         </div>
       </div>
