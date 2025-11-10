@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Star } from "lucide-react";
+import { Star, Sparkles, Heart } from "lucide-react";
+import { MoonSymbol } from "./CelestialSymbols";
+import { FlowerOfLife } from "./SacredGeometry";
 
 const testimonials = [
   {
@@ -31,7 +33,13 @@ const testimonials = [
 export const TestimonialsSection = () => {
   return (
     <section className="py-16 bg-secondary/20 relative overflow-hidden">
-      <div className="container mx-auto px-6">
+      {/* Spiritual Background Elements */}
+      <FlowerOfLife className="absolute top-[-100px] right-[-80px] w-[400px] h-[400px] text-primary opacity-[0.04]" />
+      <MoonSymbol className="absolute bottom-12 left-[8%] w-16 h-16 text-gold opacity-[0.06]" />
+      <Sparkles className="absolute top-1/3 left-[5%] w-12 h-12 text-primary opacity-[0.05]" />
+      <Heart className="absolute bottom-1/4 right-[10%] w-10 h-10 text-gold-light opacity-[0.06]" />
+      
+      <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
