@@ -152,26 +152,6 @@ export const HandwerkSection = () => {
           </div>
         </div>
 
-        {/* Video Section */}
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold text-foreground mb-3">
-              Erlebe die Herstellung live
-            </h3>
-            <p className="text-lg text-muted-foreground">
-              Tauche ein in den faszinierenden Schöpfungsprozess eines Pranatropfens
-            </p>
-          </div>
-          <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-large)] aspect-video">
-            <iframe
-              src="https://www.youtube.com/embed/kH0riYCc0dQ"
-              title="Pranatropfen Herstellung – Der vollständige Prozess"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="w-full h-full"
-            />
-          </div>
-        </div>
       </div>
     </section>
   );
