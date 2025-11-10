@@ -1,9 +1,13 @@
 import { Button } from "@/components/ui/button";
+import { HexagonPattern } from "./SacredGeometry";
 import communityBg from "@/assets/community-bg.jpg";
 
 export const CommunitySection = () => {
   return (
     <section className="relative py-32 overflow-hidden">
+      {/* Sacred Geometry Background */}
+      <HexagonPattern className="absolute inset-0 w-full h-full text-gold-light/10 opacity-20 z-[1]" />
+      
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img

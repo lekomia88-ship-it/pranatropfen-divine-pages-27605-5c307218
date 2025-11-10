@@ -1,12 +1,13 @@
-import { SacredTriangles } from "./SacredGeometry";
-import workshopImage from "@/assets/workshop-1.jpg";
-import productImage from "@/assets/product-zadkiel.jpg";
+import { SacredTriangles, FlowerOfLife } from "./SacredGeometry";
+import workshopImage from "@/assets/workshop-gemstones.jpg";
+import workshopResin from "@/assets/workshop-resin-pour.jpg";
 
 export const HandwerkSection = () => {
   return (
     <section id="handwerk" className="py-24 bg-background relative overflow-hidden">
       {/* Sacred Geometry Background */}
-      <SacredTriangles className="absolute bottom-0 right-0 w-96 h-96 text-primary" />
+      <SacredTriangles className="absolute bottom-0 right-0 w-[600px] h-[600px] text-gold/10 opacity-40" />
+      <FlowerOfLife className="absolute top-10 left-10 w-80 h-80 text-gold/10 opacity-30" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
@@ -23,21 +24,21 @@ export const HandwerkSection = () => {
 
         {/* Image Grid */}
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {/* Workshop Image */}
+          {/* Workshop Image - Gemstones */}
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-medium)] group">
             <img
               src={workshopImage}
-              alt="Handarbeit in der Werkstatt"
+              alt="Edelsteine und Materialien für die Pranatropfen"
               className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
 
-          {/* Product Image */}
+          {/* Workshop Image - Resin Pouring */}
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-medium)] group">
             <img
-              src={productImage}
-              alt="Zadkiel Pranatropfen in Gold"
+              src={workshopResin}
+              alt="Kunstharz-Guss in der Herstellung"
               className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

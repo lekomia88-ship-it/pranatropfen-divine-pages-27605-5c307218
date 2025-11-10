@@ -1,20 +1,29 @@
-import { HexagonPattern } from "./SacredGeometry";
+import { HexagonPattern, SacredTriangles } from "./SacredGeometry";
 import modelImage from "@/assets/model-jewelry-1.jpg";
+import modelImage2 from "@/assets/model-jewelry-2.jpg";
 
 export const StorySection = () => {
   return (
     <section id="story" className="py-24 bg-secondary/30 relative overflow-hidden">
       {/* Sacred Geometry Background */}
-      <HexagonPattern className="absolute top-0 left-0 w-full h-full text-primary" />
+      <HexagonPattern className="absolute top-0 left-0 w-full h-full text-gold/5 opacity-50" />
+      <SacredTriangles className="absolute bottom-20 right-20 w-96 h-96 text-gold/10 opacity-40" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
-          {/* Image */}
-          <div className="order-2 lg:order-1">
+          {/* Images */}
+          <div className="order-2 lg:order-1 grid grid-cols-2 gap-6">
             <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-medium)]">
               <img
                 src={modelImage}
                 alt="Model trägt Pranatropfen Schmuck"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-medium)]">
+              <img
+                src={modelImage2}
+                alt="Model mit Pranatropfen Energie-Schmuck"
                 className="w-full h-full object-cover"
               />
             </div>
