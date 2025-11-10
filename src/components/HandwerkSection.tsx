@@ -82,17 +82,19 @@ export const HandwerkSection = () => {
             </div>
           </div>
 
-          <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-medium)] group">
+          {/* Step 3 - Full Width */}
+          <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-large)] group lg:col-span-2">
             <img
-              src={pranatropfenCollection}
-              alt="Vielfalt fertig ausgehärteter Pranatropfen in verschiedenen Farbkombinationen"
-              className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
+              src={workshopResinPouring}
+              alt="Das finale Harz-Gießen über die komponierte Edelstein-Anordnung"
+              className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent">
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-2xl font-bold text-background mb-2">Schritt 3: Die Vollendung</h3>
-                <p className="text-base text-background/90">
-                  Nach Tagen des Aushärtens wird jeder Tropfen von Hand geschliffen und poliert, bis er perfekt glänzt.
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent">
+              <div className="absolute bottom-0 left-0 right-0 p-10">
+                <h3 className="text-3xl font-bold text-background mb-3">Schritt 3: Die Versiegelung</h3>
+                <p className="text-lg text-background/90 max-w-2xl">
+                  Das goldschimmernde Harz fließt behutsam über die platzierte Komposition. 
+                  In diesem Moment verschmelzen Materie und Intention – die Energie wird eingeschlossen, der Tropfen nimmt seine endgültige Form an.
                 </p>
               </div>
             </div>
