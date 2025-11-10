@@ -10,10 +10,10 @@ export const HandwerkSection = () => {
   return (
     <section id="handwerk" className="py-24 bg-gradient-to-b from-secondary/30 via-background to-secondary/20 relative overflow-hidden">
       {/* Subtle celestial symbols */}
-      <MoonSymbol className="absolute top-16 left-12 w-16 h-16 text-gold opacity-[0.08]" />
-      <SunSymbol className="absolute bottom-24 right-16 w-14 h-14 text-gold-light opacity-[0.06]" />
-      <FlowerOfLife className="absolute top-1/3 right-[-120px] w-[350px] h-[350px] text-primary opacity-[0.04]" />
-      <SacredTriangles className="absolute bottom-1/4 left-[-80px] w-[280px] h-[280px] text-primary opacity-[0.04]" />
+      <MoonSymbol className="absolute top-16 left-12 w-16 h-16 text-gold opacity-[0.15]" />
+      <SunSymbol className="absolute bottom-24 right-16 w-14 h-14 text-gold-light opacity-[0.13]" />
+      <FlowerOfLife className="absolute top-1/3 right-[-120px] w-[350px] h-[350px] text-primary opacity-[0.10]" />
+      <SacredTriangles className="absolute bottom-1/4 left-[-80px] w-[280px] h-[280px] text-primary opacity-[0.10]" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}

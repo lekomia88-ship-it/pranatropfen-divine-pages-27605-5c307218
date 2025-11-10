@@ -20,8 +20,8 @@ export const StorySection = () => {
       </div>
 
       {/* Subtle sun symbols scattered */}
-      <SunSymbol className="absolute top-32 left-24 w-12 h-12 text-gold-light opacity-8" />
-      <SunSymbol className="absolute bottom-24 right-16 w-10 h-10 text-gold opacity-6" />
+      <SunSymbol className="absolute top-32 left-24 w-12 h-12 text-gold-light opacity-[0.15]" />
+      <SunSymbol className="absolute bottom-24 right-16 w-10 h-10 text-gold opacity-[0.12]" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
