@@ -30,11 +30,20 @@ export const StorySection = () => {
               Edelmetalle und Edelsteine – in einem harmonischen Design.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Für Menschen, die ihre Energie spüren und ihren Stil leben.
+              Für Menschen, die ihre <span className="font-semibold text-foreground">Energie spüren</span> und ihren <span className="font-semibold text-foreground">Stil leben</span>.
             </p>
-            <div className="pt-4">
+            <div className="pt-4 flex flex-wrap gap-3">
               <div className="inline-block px-6 py-2 rounded-full bg-primary/10 text-primary font-medium">
                 ✦ Handcrafted with Love
+              </div>
+              <div className="inline-block px-6 py-2 rounded-full bg-primary/10 text-primary font-medium">
+                ✧ Made in Germany
+              </div>
+              <div className="inline-block px-6 py-2 rounded-full bg-primary/10 text-primary font-medium">
+                ◈ Unique Design
+              </div>
+              <div className="inline-block px-6 py-2 rounded-full bg-primary/10 text-primary font-medium">
+                ☽ Natural Energy
               </div>
             </div>
           </div>

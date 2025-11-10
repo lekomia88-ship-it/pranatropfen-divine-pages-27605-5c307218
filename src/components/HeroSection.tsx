@@ -26,13 +26,13 @@ export const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center max-w-4xl">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-background leading-tight">
-          Schmuck mit Bedeutung
+          Schmuck mit <span className="font-extrabold">Bedeutung</span>
         </h1>
-        <p className="text-xl md:text-2xl mb-4 text-background/90 max-w-3xl mx-auto font-light">
-          Handgefertigte Design-Unikate für bewusste Menschen
+        <p className="text-xl md:text-2xl mb-4 text-background/90 max-w-3xl mx-auto font-medium">
+          Handgefertigte <span className="font-bold">Design-Unikate</span> für bewusste Menschen
         </p>
-        <p className="text-base md:text-lg mb-10 text-background/80 max-w-2xl mx-auto">
-          Trage, was dich stärkt. Jeder Pranatropfen wird in liebevoller Handarbeit gefertigt – aus Edelsteinen, Edelmetallen und klarem Kunstharz.
+        <p className="text-base md:text-lg mb-10 text-background/80 max-w-2xl mx-auto font-light">
+          Trage, was dich <span className="font-semibold">stärkt</span>. Jeder Pranatropfen wird in liebevoller <span className="font-semibold">Handarbeit</span> gefertigt – aus Edelsteinen, Edelmetallen und klarem Kunstharz.
         </p>
 
         {/* CTA Buttons */}

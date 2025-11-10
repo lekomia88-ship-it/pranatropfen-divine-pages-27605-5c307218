@@ -1,18 +1,18 @@
-import { PackageCheck, RotateCcw, Truck, ShieldCheck } from "lucide-react";
+import { Sparkles, Heart, Zap, ShieldCheck } from "lucide-react";
 
 const usps = [
   {
-    icon: PackageCheck,
+    icon: Sparkles,
     title: "Handgefertigt in Deutschland",
     description: "Jedes Stück ein Unikat",
   },
   {
-    icon: RotateCcw,
+    icon: Heart,
     title: "30 Tage Rückgabe",
     description: "Risikofrei bestellen",
   },
   {
-    icon: Truck,
+    icon: Zap,
     title: "Versand ab 70 € gratis",
     description: "Schnelle Lieferung",
   },
