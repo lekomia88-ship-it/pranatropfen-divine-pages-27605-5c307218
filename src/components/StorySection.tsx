@@ -5,12 +5,27 @@ import modelImage2 from "@/assets/model-jewelry-2.jpg";
 export const StorySection = () => {
   return (
     <section id="story" className="py-24 bg-secondary/30 relative overflow-hidden">
+      {/* Playful moon hanging on a chain in background */}
+      <div className="absolute top-20 right-32 opacity-10">
+        <svg width="80" height="120" viewBox="0 0 80 120" className="text-gold">
+          {/* Delicate chain */}
+          <line x1="40" y1="0" x2="40" y2="60" stroke="currentColor" strokeWidth="1.5" strokeDasharray="3 3" />
+          {/* Small hook at top */}
+          <path d="M 37 0 Q 40 -2 43 0" fill="none" stroke="currentColor" strokeWidth="1.5" />
+          {/* Moon hanging */}
+          <g transform="translate(40, 60)">
+            <MoonSymbol className="w-16 h-16" />
+          </g>
+        </svg>
+      </div>
+
+      {/* Subtle sun symbols scattered */}
+      <SunSymbol className="absolute top-32 left-24 w-12 h-12 text-gold-light opacity-8" />
+      <SunSymbol className="absolute bottom-24 right-16 w-10 h-10 text-gold opacity-6" />
+
       <div className="container mx-auto px-6 relative z-10">
-        {/* Header with celestial symbols */}
-        <div className="text-center max-w-3xl mx-auto mb-16 relative">
-          <MoonSymbol className="absolute -top-8 -left-16 w-16 h-16 text-gold opacity-20" />
-          <SunSymbol className="absolute -top-8 -right-16 w-20 h-20 text-gold-light opacity-20" />
-          
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground leading-tight mb-6">
             Energie trifft Ästhetik
           </h2>
@@ -23,7 +38,7 @@ export const StorySection = () => {
         {/* Content Grid */}
         <div className="grid lg:grid-cols-2 gap-12 items-start max-w-7xl mx-auto">
           {/* Images */}
-          <div className="grid grid-cols-2 gap-6 relative">
+          <div className="grid grid-cols-2 gap-6">
             <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-medium)] h-[300px]">
               <img
                 src={modelImage}
@@ -38,12 +53,10 @@ export const StorySection = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            {/* Decorative moon in corner */}
-            <MoonSymbol className="absolute -bottom-6 -right-6 w-24 h-24 text-gold opacity-15" />
           </div>
 
           {/* Content */}
-          <div className="space-y-8 relative">
+          <div className="space-y-8">
             <div className="space-y-4">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Für Menschen, die ihre <span className="font-semibold text-foreground">Energie spüren</span> und ihren <span className="font-semibold text-foreground">Stil leben</span>.
@@ -53,22 +66,19 @@ export const StorySection = () => {
               </p>
             </div>
 
-            {/* Tags with sun decoration */}
-            <div className="relative">
-              <SunSymbol className="absolute -top-4 -right-8 w-16 h-16 text-gold-light opacity-12" />
-              <div className="pt-4 flex flex-wrap gap-3">
-                <div className="inline-block px-6 py-2 rounded-full bg-primary/10 text-primary font-medium">
-                  ✦ Handcrafted with Love
-                </div>
-                <div className="inline-block px-6 py-2 rounded-full bg-primary/10 text-primary font-medium">
-                  ✧ Made in Germany
-                </div>
-                <div className="inline-block px-6 py-2 rounded-full bg-primary/10 text-primary font-medium">
-                  ◈ Unique Design
-                </div>
-                <div className="inline-block px-6 py-2 rounded-full bg-primary/10 text-primary font-medium">
-                  ☽ Natural Energy
-                </div>
+            {/* Tags */}
+            <div className="flex flex-wrap gap-3">
+              <div className="inline-block px-6 py-2 rounded-full bg-primary/10 text-primary font-medium">
+                ✦ Handcrafted with Love
+              </div>
+              <div className="inline-block px-6 py-2 rounded-full bg-primary/10 text-primary font-medium">
+                ✧ Made in Germany
+              </div>
+              <div className="inline-block px-6 py-2 rounded-full bg-primary/10 text-primary font-medium">
+                ◈ Unique Design
+              </div>
+              <div className="inline-block px-6 py-2 rounded-full bg-primary/10 text-primary font-medium">
+                ☽ Natural Energy
               </div>
             </div>
           </div>
