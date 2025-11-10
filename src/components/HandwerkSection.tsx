@@ -5,6 +5,7 @@ import pranatropfenCollection from "@/assets/workshop-pranatropfen-collection.jp
 import pranatropfenHandReal from "@/assets/pranatropfen-hand-real.jpg";
 import workshopSmallGemstones from "@/assets/workshop-small-gemstones.jpg";
 import workshopBlackWhiteTurquoise from "@/assets/workshop-black-white-turquoise.jpg";
+import workshopPolishingActivation from "@/assets/workshop-polishing-activation.jpg";
 
 export const HandwerkSection = () => {
   return (
@@ -82,19 +83,36 @@ export const HandwerkSection = () => {
             </div>
           </div>
 
-          {/* Step 3 - Full Width */}
+          {/* Step 3 - 50% width */}
+          <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-medium)] group">
+            <img
+              src={pranatropfenCollection}
+              alt="Das Harz wird über die komponierte Edelstein-Anordnung gegossen"
+              className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent">
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <h3 className="text-2xl font-bold text-background mb-2">Schritt 3: Die Versiegelung</h3>
+                <p className="text-base text-background/90">
+                  Das Harz umschließt sanft die Komposition und konserviert die energetische Intention.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Step 4 - Full Width */}
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-large)] group lg:col-span-2">
             <img
-              src={workshopResinPouring}
-              alt="Das finale Harz-Gießen über die komponierte Edelstein-Anordnung"
+              src={workshopPolishingActivation}
+              alt="Handpolieren und energetische Aktivierung des fertigen Pranatropfens"
               className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-10">
-                <h3 className="text-3xl font-bold text-background mb-3">Schritt 3: Die Versiegelung</h3>
+                <h3 className="text-3xl font-bold text-background mb-3">Schritt 4: Polierung & Energetische Aktivierung</h3>
                 <p className="text-lg text-background/90 max-w-2xl">
-                  Das goldschimmernde Harz fließt behutsam über die platzierte Komposition. 
-                  In diesem Moment verschmelzen Materie und Intention – die Energie wird eingeschlossen, der Tropfen nimmt seine endgültige Form an.
+                  Nach Tagen des Aushärtens wird jeder Tropfen von Hand geschliffen und poliert. 
+                  Währenddessen wird er mit positiver Intention und Achtsamkeit geladen – so erhält jeder Pranatropfen seine einzigartige energetische Signatur.
                 </p>
               </div>
             </div>
