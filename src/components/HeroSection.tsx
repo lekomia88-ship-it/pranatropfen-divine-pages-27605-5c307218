@@ -9,7 +9,7 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center overflow-hidden">
       {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -24,28 +24,31 @@ export const HeroSection = () => {
       <FlowerOfLife className="absolute bottom-[-200px] right-1/4 w-[400px] h-[400px] text-background opacity-[0.08]" />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center max-w-4xl">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-background leading-tight animate-fade-in-up">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center max-w-4xl">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 text-background leading-tight animate-fade-in-up">
           Trage deine <span className="font-extrabold">Energie</span>
         </h1>
-        <p className="text-xl md:text-2xl mb-4 text-background/90 max-w-3xl mx-auto font-medium animate-fade-in-up" style={{ animationDelay: "200ms" }}>
+        <p className="text-lg sm:text-xl md:text-2xl mb-3 sm:mb-4 text-background/90 max-w-3xl mx-auto font-medium animate-fade-in-up" style={{ animationDelay: "200ms" }}>
           Dein persönlicher <span className="font-bold">Energiebegleiter</span> – handgefertigt mit Intention
         </p>
-        <p className="text-base md:text-lg mb-10 text-background/80 max-w-2xl mx-auto font-light animate-fade-in-up" style={{ animationDelay: "400ms" }}>
+        <p className="text-sm sm:text-base md:text-lg mb-8 sm:mb-10 text-background/80 max-w-2xl mx-auto font-light animate-fade-in-up" style={{ animationDelay: "400ms" }}>
           Spüre die Verbindung. Jeder Pranatropfen trägt eine <span className="font-semibold">einzigartige Schwingung</span> aus natürlichen Edelsteinen und wird in achtsamer <span className="font-semibold">Handarbeit</span> für dich erschaffen.
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: "600ms" }}>
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: "600ms" }}>
           <Button
             variant="heroPrimary"
+            size="lg"
             onClick={() => scrollToSection("story")}
+            className="w-full sm:w-auto"
           >
             Finde deine Energie
           </Button>
           <Button
             variant="outline"
-            className="bg-background/10 backdrop-blur-sm text-background border-background/30 hover:bg-background/20"
+            size="lg"
+            className="bg-background/10 backdrop-blur-sm text-background border-background/30 hover:bg-background/20 w-full sm:w-auto"
             onClick={() => scrollToSection("handwerk")}
           >
             Wie sie entstehen
