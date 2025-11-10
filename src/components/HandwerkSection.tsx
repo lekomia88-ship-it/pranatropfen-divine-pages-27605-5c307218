@@ -59,7 +59,7 @@ export const HandwerkSection = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-2xl font-bold text-background mb-2">Schritt 1: Die Auswahl</h3>
+                <h3 className="text-2xl font-bold text-background mb-2">Die Auswahl</h3>
                 <p className="text-base text-background/90">
                   Jeder Edelstein wird sorgfältig nach Farbe, Form und energetischer Schwingung ausgewählt – intuitiv und mit Bedacht.
                 </p>
@@ -75,7 +75,7 @@ export const HandwerkSection = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-2xl font-bold text-background mb-2">Schritt 2: Die Komposition</h3>
+                <h3 className="text-2xl font-bold text-background mb-2">Die Komposition</h3>
                 <p className="text-base text-background/90">
                   Mit Pinzette und ruhiger Hand entsteht ein harmonisches Arrangement – jeder Stein findet seinen perfekten Platz.
                 </p>
@@ -83,24 +83,7 @@ export const HandwerkSection = () => {
             </div>
           </div>
 
-          {/* Step 3 - 50% width */}
-          <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-medium)] group">
-            <img
-              src={pranatropfenCollection}
-              alt="Das Harz wird über die komponierte Edelstein-Anordnung gegossen"
-              className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent">
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-2xl font-bold text-background mb-2">Schritt 3: Die Versiegelung</h3>
-                <p className="text-base text-background/90">
-                  Das Harz umschließt sanft die Komposition und konserviert die energetische Intention.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Step 4 - Full Width */}
+          {/* Final Moment - Full Width */}
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-large)] group lg:col-span-2">
             <img
               src={workshopPolishingActivation}
@@ -109,7 +92,7 @@ export const HandwerkSection = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-10">
-                <h3 className="text-3xl font-bold text-background mb-3">Schritt 4: Polierung & Energetische Aktivierung</h3>
+                <h3 className="text-3xl font-bold text-background mb-3">Die Vollendung</h3>
                 <p className="text-lg text-background/90 max-w-2xl">
                   Nach Tagen des Aushärtens wird jeder Tropfen von Hand geschliffen und poliert. 
                   Währenddessen wird er mit positiver Intention und Achtsamkeit geladen – so erhält jeder Pranatropfen seine einzigartige energetische Signatur.
