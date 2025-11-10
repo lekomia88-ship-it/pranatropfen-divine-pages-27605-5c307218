@@ -30,7 +30,7 @@ export const NewsletterSection = () => {
   };
 
   return (
-    <section className="py-24 bg-gradient-to-b from-background to-secondary/20 relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-b from-background to-secondary/20 relative overflow-hidden">
       {/* Decorative Elements */}
       <MoonSymbol className="absolute top-12 right-16 w-20 h-20 text-gold opacity-[0.06]" />
       <Sparkles className="absolute bottom-16 left-12 w-16 h-16 text-gold-light opacity-[0.08]" />

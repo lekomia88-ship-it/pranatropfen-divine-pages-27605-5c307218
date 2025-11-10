@@ -51,7 +51,7 @@ const faqs = [
 
 export const FAQSection = () => {
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
+    <section className="py-16 bg-background relative overflow-hidden">
       {/* Subtle Background Geometry */}
       <FlowerOfLife className="absolute top-20 right-[-100px] w-[400px] h-[400px] text-primary opacity-[0.04]" />
       <FlowerOfLife className="absolute bottom-20 left-[-100px] w-[400px] h-[400px] text-primary opacity-[0.04]" />
