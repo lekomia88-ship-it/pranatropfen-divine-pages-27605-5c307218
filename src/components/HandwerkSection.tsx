@@ -4,7 +4,7 @@ import workshopResinPouring from "@/assets/workshop-resin-pouring.jpg";
 import pranatropfenCollection from "@/assets/workshop-pranatropfen-collection.jpg";
 import pranatropfenHandReal from "@/assets/pranatropfen-hand-real.jpg";
 import workshopSmallGemstones from "@/assets/workshop-small-gemstones.jpg";
-import workshopMultiStones from "@/assets/workshop-multi-stones.jpg";
+import workshopBlackWhiteTurquoise from "@/assets/workshop-black-white-turquoise.jpg";
 
 export const HandwerkSection = () => {
   return (
@@ -68,15 +68,15 @@ export const HandwerkSection = () => {
 
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-medium)] group">
             <img
-              src={workshopMultiStones}
-              alt="Einlegen mehrerer kleiner Edelsteine (Türkis, Pyrit, schwarze Steine) und Goldflakes in die Tropfenform"
+              src={workshopBlackWhiteTurquoise}
+              alt="Komposition aus schwarzen, weißen und türkisfarbenen Edelsteinen mit Goldflakes in der Tropfenform"
               className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <h3 className="text-2xl font-bold text-background mb-2">Schritt 2: Komposition</h3>
                 <p className="text-base text-background/90">
-                  Türkis, Pyrit, schwarze Steine und Goldflakes werden Stück für Stück komponiert.
+                  Schwarze, weiße und türkisfarbene Steine mit Goldflakes werden kunstvoll komponiert.
                 </p>
               </div>
             </div>
