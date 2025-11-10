@@ -21,8 +21,8 @@ export const HeroSection = () => {
       </div>
 
       {/* Sacred Geometry Background */}
-      <FlowerOfLife className="absolute top-1/4 right-1/4 w-[500px] h-[500px] text-gold-light/20 opacity-30 animate-pulse" />
-      <FlowerOfLife className="absolute bottom-10 left-10 w-80 h-80 text-gold-light/15 opacity-25" />
+      <FlowerOfLife className="absolute top-1/4 right-1/4 w-[500px] h-[500px] text-background opacity-[0.15] animate-pulse" />
+      <FlowerOfLife className="absolute bottom-10 left-10 w-80 h-80 text-background opacity-[0.12]" />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center max-w-4xl">

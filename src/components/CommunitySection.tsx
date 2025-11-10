@@ -6,7 +6,7 @@ export const CommunitySection = () => {
   return (
     <section className="relative py-32 overflow-hidden">
       {/* Sacred Geometry Background */}
-      <HexagonPattern className="absolute inset-0 w-full h-full text-gold-light/10 opacity-20 z-[1]" />
+      <HexagonPattern className="absolute inset-0 w-full h-full text-background opacity-[0.10] z-[1]" />
       
       {/* Background Image */}
       <div className="absolute inset-0 z-0">

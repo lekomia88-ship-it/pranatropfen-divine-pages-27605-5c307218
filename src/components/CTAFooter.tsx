@@ -5,7 +5,7 @@ export const CTAFooter = () => {
   return (
     <section className="relative py-24 bg-secondary/20 overflow-hidden">
       {/* Sacred Geometry Background */}
-      <FlowerOfLife className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] text-gold/15 opacity-40" />
+      <FlowerOfLife className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] text-gold opacity-[0.18]" />
 
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-2xl mx-auto space-y-8">
