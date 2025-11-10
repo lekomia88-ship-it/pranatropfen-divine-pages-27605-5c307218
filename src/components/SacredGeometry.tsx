@@ -4,7 +4,7 @@ export const FlowerOfLife = ({ className = "" }: { className?: string }) => (
     className={className}
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g fill="none" stroke="currentColor" strokeWidth="1" opacity="0.05">
+    <g fill="none" stroke="currentColor" strokeWidth="1">
       {/* Center circle */}
       <circle cx="200" cy="200" r="40" />
       {/* Six circles around center */}
@@ -31,7 +31,7 @@ export const HexagonPattern = ({ className = "" }: { className?: string }) => (
     className={className}
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g fill="none" stroke="currentColor" strokeWidth="1" opacity="0.05">
+    <g fill="none" stroke="currentColor" strokeWidth="1">
       {Array.from({ length: 5 }).map((_, row) =>
         Array.from({ length: 5 }).map((_, col) => {
           const x = 50 + col * 80 + (row % 2) * 40;
@@ -57,7 +57,7 @@ export const SacredTriangles = ({ className = "" }: { className?: string }) => (
     className={className}
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g fill="none" stroke="currentColor" strokeWidth="1" opacity="0.05">
+    <g fill="none" stroke="currentColor" strokeWidth="1">
       {/* Upward triangles */}
       <polygon points="200,80 260,180 140,180" />
       <polygon points="200,220 260,320 140,320" />
