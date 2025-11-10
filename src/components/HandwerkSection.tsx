@@ -4,7 +4,7 @@ import workshopResinPouring from "@/assets/workshop-resin-pouring.jpg";
 import pranatropfenHandReal from "@/assets/pranatropfen-hand-real.jpg";
 import workshopSmallGemstones from "@/assets/workshop-small-gemstones.jpg";
 import workshopBlackWhiteTurquoise from "@/assets/workshop-black-white-turquoise.jpg";
-import workshopRitualActivation from "@/assets/workshop-ritual-activation.jpg";
+import workshopRitualCeremony from "@/assets/workshop-ritual-ceremony.jpg";
 
 export const HandwerkSection = () => {
   return (
@@ -85,8 +85,8 @@ export const HandwerkSection = () => {
           {/* Final Moment - Full Width */}
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-large)] group lg:col-span-2">
             <img
-              src={workshopRitualActivation}
-              alt="Rituelle energetische Aktivierung der fertigen Pranatropfen mit Klangschale, Räucherstäbchen und Kerzenschein"
+              src={workshopRitualCeremony}
+              alt="Rituelle energetische Aktivierung mit Klangschale, Räucherstäbchen und Kerzenschein"
               className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent">
