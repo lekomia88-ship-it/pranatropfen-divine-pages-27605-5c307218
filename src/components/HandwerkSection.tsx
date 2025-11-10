@@ -1,11 +1,11 @@
 import { SacredTriangles, FlowerOfLife } from "./SacredGeometry";
 import { MoonSymbol, SunSymbol } from "./CelestialSymbols";
 import workshopResinPouring from "@/assets/workshop-resin-pouring.jpg";
-import pranatropfenCollection from "@/assets/workshop-pranatropfen-collection.jpg";
+import realResinPouringMold from "@/assets/real-resin-pouring-mold.jpg";
 import pranatropfenHandReal from "@/assets/pranatropfen-hand-real.jpg";
 import workshopSmallGemstones from "@/assets/workshop-small-gemstones.jpg";
 import workshopBlackWhiteTurquoise from "@/assets/workshop-black-white-turquoise.jpg";
-import workshopSpiritualCharging from "@/assets/workshop-spiritual-charging.jpg";
+import realEnergyCharging from "@/assets/real-energy-charging.jpg";
 
 export const HandwerkSection = () => {
   return (
@@ -86,8 +86,8 @@ export const HandwerkSection = () => {
           {/* Final Moment - Full Width */}
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-large)] group lg:col-span-2">
             <img
-              src={workshopSpiritualCharging}
-              alt="Energetische Aktivierung der fertigen Pranatropfen mit Kerzenlicht und Kristallen"
+              src={realEnergyCharging}
+              alt="Energetische Aktivierung - diese einzigartige Energie fließt in den Pranatropfen"
               className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent">
@@ -95,7 +95,7 @@ export const HandwerkSection = () => {
                 <h3 className="text-3xl font-bold text-background mb-3">Die Vollendung</h3>
                 <p className="text-lg text-background/90 max-w-2xl">
                   Nach Tagen des Aushärtens und liebevoller Politur werden die fertigen Pranatropfen energetisch aufgeladen. 
-                  Im Kerzenschein, umgeben von Kristallen und achtsamer Intention, erhält jedes Stück seine einzigartige energetische Signatur – bereit, seinen Träger zu begleiten.
+                  Diese einzigartige Energie fließt in jedes Stück – mit achtsamer Intention wird jeder Pranatropfen zu einem kraftvollen Begleiter.
                 </p>
               </div>
             </div>
