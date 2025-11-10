@@ -20,9 +20,8 @@ export const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/40 to-background/90" />
       </div>
 
-      {/* Sacred Geometry Background */}
-      <FlowerOfLife className="absolute top-1/4 right-1/4 w-[500px] h-[500px] text-background opacity-[0.15] animate-pulse" />
-      <FlowerOfLife className="absolute bottom-10 left-10 w-80 h-80 text-background opacity-[0.12]" />
+      {/* Sacred Geometry Background - subtle */}
+      <FlowerOfLife className="absolute bottom-[-200px] right-1/4 w-[400px] h-[400px] text-background opacity-[0.08]" />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center max-w-4xl">

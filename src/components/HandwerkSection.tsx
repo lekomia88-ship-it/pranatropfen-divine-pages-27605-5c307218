@@ -5,9 +5,9 @@ import workshopResin from "@/assets/workshop-resin-pour.jpg";
 export const HandwerkSection = () => {
   return (
     <section id="handwerk" className="py-24 bg-background relative overflow-hidden">
-      {/* Sacred Geometry Background */}
-      <SacredTriangles className="absolute bottom-0 right-0 w-[600px] h-[600px] text-gold opacity-20" />
-      <FlowerOfLife className="absolute top-10 left-10 w-[500px] h-[500px] text-gold-dark opacity-25" />
+      {/* Subtle geometry - non-intrusive */}
+      <SacredTriangles className="absolute bottom-12 right-12 w-32 h-32 text-gold opacity-10" />
+      <FlowerOfLife className="absolute top-12 left-12 w-28 h-28 text-gold-light opacity-8" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}

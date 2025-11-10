@@ -1,13 +1,13 @@
-import { HexagonPattern, SacredTriangles } from "./SacredGeometry";
+import { MoonSymbol, SunSymbol } from "./CelestialSymbols";
 import modelImage from "@/assets/model-jewelry-1.jpg";
 import modelImage2 from "@/assets/model-jewelry-2.jpg";
 
 export const StorySection = () => {
   return (
     <section id="story" className="py-24 bg-secondary/30 relative overflow-hidden">
-      {/* Sacred Geometry Background */}
-      <HexagonPattern className="absolute top-0 left-0 w-full h-full text-gold-dark opacity-20" />
-      <SacredTriangles className="absolute bottom-20 right-20 w-[500px] h-[500px] text-gold opacity-25" />
+      {/* Subtle celestial symbols - non-intrusive */}
+      <MoonSymbol className="absolute top-32 right-12 w-20 h-20 text-gold opacity-15" />
+      <SunSymbol className="absolute bottom-32 left-12 w-24 h-24 text-gold-light opacity-12" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
