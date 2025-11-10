@@ -6,8 +6,8 @@ export const StorySection = () => {
   return (
     <section id="story" className="py-24 bg-secondary/30 relative overflow-hidden">
       {/* Sacred Geometry Background */}
-      <HexagonPattern className="absolute top-0 left-0 w-full h-full text-gold opacity-[0.08]" />
-      <SacredTriangles className="absolute bottom-20 right-20 w-[500px] h-[500px] text-gold-light opacity-[0.15]" />
+      <HexagonPattern className="absolute top-0 left-0 w-full h-full text-gold-dark opacity-20" />
+      <SacredTriangles className="absolute bottom-20 right-20 w-[500px] h-[500px] text-gold opacity-25" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">

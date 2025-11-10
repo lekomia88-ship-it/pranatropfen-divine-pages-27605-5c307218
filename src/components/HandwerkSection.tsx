@@ -6,8 +6,8 @@ export const HandwerkSection = () => {
   return (
     <section id="handwerk" className="py-24 bg-background relative overflow-hidden">
       {/* Sacred Geometry Background */}
-      <SacredTriangles className="absolute bottom-0 right-0 w-[600px] h-[600px] text-gold opacity-[0.12]" />
-      <FlowerOfLife className="absolute top-10 left-10 w-[500px] h-[500px] text-gold-light opacity-[0.15]" />
+      <SacredTriangles className="absolute bottom-0 right-0 w-[600px] h-[600px] text-gold opacity-20" />
+      <FlowerOfLife className="absolute top-10 left-10 w-[500px] h-[500px] text-gold-dark opacity-25" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
