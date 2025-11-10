@@ -1,10 +1,10 @@
 import { SacredTriangles, FlowerOfLife } from "./SacredGeometry";
 import { MoonSymbol, SunSymbol } from "./CelestialSymbols";
-import pranatropfenPourWithGems from "@/assets/workshop-pour-with-gems.jpg";
+import workshopResinPouring from "@/assets/workshop-resin-pouring.jpg";
 import pranatropfenCollection from "@/assets/workshop-pranatropfen-collection.jpg";
-import pranatropfenProductReal from "@/assets/pranatropfen-product-real.jpg";
+import pranatropfenHandReal from "@/assets/pranatropfen-hand-real.jpg";
 import workshopSmallGemstones from "@/assets/workshop-small-gemstones.jpg";
-import workshopCrystalPlacement from "@/assets/workshop-crystal-placement.jpg";
+import workshopTweezersMold from "@/assets/workshop-tweezers-mold.jpg";
 
 export const HandwerkSection = () => {
   return (
@@ -34,16 +34,16 @@ export const HandwerkSection = () => {
           {/* Hero Image - The Pour */}
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-large)] group lg:col-span-2">
             <img
-              src={pranatropfenPourWithGems}
-              alt="Präzises Gießen des Pranatropfens mit sichtbaren Edelsteinen und Goldflakes"
+              src={workshopResinPouring}
+              alt="Präzises Gießen von flüssigem Harz in die Pranatropfen-Form mit sichtbaren Edelsteinen"
               className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-10">
                 <h3 className="text-3xl font-bold text-background mb-3">Der magische Moment</h3>
                 <p className="text-lg text-background/90 max-w-2xl">
-                  Kristallklares Harz umschließt funkelnde Goldflakes und sorgfältig platzierte Edelsteine. 
-                  Jede Schicht wird mit Bedacht gegossen, um die perfekte Tropfenform zu kreieren.
+                  Das goldschimmernde Harz fließt sanft über die platzierten Edelsteine und Goldflakes. 
+                  Schicht für Schicht entsteht die perfekte Tropfenform – ein faszinierender Prozess voller Präzision.
                 </p>
               </div>
             </div>
@@ -68,15 +68,15 @@ export const HandwerkSection = () => {
 
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-medium)] group">
             <img
-              src={workshopCrystalPlacement}
-              alt="Präzises Platzieren eines echten Amethyst-Kristalls mit Pinzette in die Harzform"
+              src={workshopTweezersMold}
+              alt="Präzises Einlegen eines Kristalls mit Pinzette in die Tropfenform"
               className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <h3 className="text-2xl font-bold text-background mb-2">Schritt 2: Platzierung</h3>
                 <p className="text-base text-background/90">
-                  Mit Pinzette und ruhiger Hand wird jeder Kristall präzise im Harz positioniert.
+                  Mit Pinzette und ruhiger Hand wird jeder Kristall präzise in der Tropfenform positioniert.
                 </p>
               </div>
             </div>
@@ -87,8 +87,8 @@ export const HandwerkSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto mb-16">
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-large)]">
             <img
-              src={pranatropfenProductReal}
-              alt="Echter Pranatropfen-Anhänger mit eingebettetem Amethyst-Kristall und Goldakzenten"
+              src={pranatropfenHandReal}
+              alt="Echter handgefertigter Pranatropfen-Anhänger in der Hand gehalten"
               className="w-full h-[600px] object-cover"
             />
           </div>
