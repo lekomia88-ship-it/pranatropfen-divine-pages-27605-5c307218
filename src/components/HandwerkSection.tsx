@@ -5,7 +5,7 @@ import pranatropfenCollection from "@/assets/workshop-pranatropfen-collection.jp
 import pranatropfenHandReal from "@/assets/pranatropfen-hand-real.jpg";
 import workshopSmallGemstones from "@/assets/workshop-small-gemstones.jpg";
 import workshopBlackWhiteTurquoise from "@/assets/workshop-black-white-turquoise.jpg";
-import workshopPolishingActivation from "@/assets/workshop-polishing-activation.jpg";
+import workshopCompletion from "@/assets/workshop-completion.jpg";
 
 export const HandwerkSection = () => {
   return (
@@ -86,8 +86,8 @@ export const HandwerkSection = () => {
           {/* Final Moment - Full Width */}
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-large)] group lg:col-span-2">
             <img
-              src={workshopPolishingActivation}
-              alt="Handpolieren und energetische Aktivierung des fertigen Pranatropfens"
+              src={workshopCompletion}
+              alt="Fertige polierte Pranatropfen bereit für ihre Träger"
               className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent">
