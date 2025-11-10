@@ -1,11 +1,10 @@
 import { SacredTriangles, FlowerOfLife } from "./SacredGeometry";
 import { MoonSymbol, SunSymbol } from "./CelestialSymbols";
-import pranatropfenPour from "@/assets/workshop-pranatropfen-pour.jpg";
+import pranatropfenPourWithGems from "@/assets/workshop-pour-with-gems.jpg";
 import pranatropfenCollection from "@/assets/workshop-pranatropfen-collection.jpg";
 import pranatropfenProductReal from "@/assets/pranatropfen-product-real.jpg";
-import workshopImage from "@/assets/workshop-gemstones.jpg";
-import workshopGemstoneSelection from "@/assets/workshop-gemstone-selection.jpg";
-import workshopTweezersPlacement from "@/assets/workshop-tweezers-placement.jpg";
+import workshopSmallGemstones from "@/assets/workshop-small-gemstones.jpg";
+import workshopCrystalPlacement from "@/assets/workshop-crystal-placement.jpg";
 
 export const HandwerkSection = () => {
   return (
@@ -35,15 +34,15 @@ export const HandwerkSection = () => {
           {/* Hero Image - The Pour */}
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-large)] group lg:col-span-2">
             <img
-              src={pranatropfenPour}
-              alt="Präzises Gießen des Pranatropfens mit Goldflakes und Edelsteinen"
+              src={pranatropfenPourWithGems}
+              alt="Präzises Gießen des Pranatropfens mit sichtbaren Edelsteinen und Goldflakes"
               className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-10">
                 <h3 className="text-3xl font-bold text-background mb-3">Der magische Moment</h3>
                 <p className="text-lg text-background/90 max-w-2xl">
-                  Kristallklares Harz trifft auf funkelnde Goldflakes und sorgfältig ausgewählte Edelsteine. 
+                  Kristallklares Harz umschließt funkelnde Goldflakes und sorgfältig platzierte Edelsteine. 
                   Jede Schicht wird mit Bedacht gegossen, um die perfekte Tropfenform zu kreieren.
                 </p>
               </div>
@@ -53,15 +52,15 @@ export const HandwerkSection = () => {
           {/* Process Cards */}
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-medium)] group">
             <img
-              src={workshopGemstoneSelection}
-              alt="Handwerkliche Auswahl verschiedener Edelsteine und Kristalle"
+              src={workshopSmallGemstones}
+              alt="Handwerkliche Auswahl kleiner Edelstein-Chips und Kristalle"
               className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <h3 className="text-2xl font-bold text-background mb-2">Schritt 1: Auswahl</h3>
                 <p className="text-base text-background/90">
-                  Jeder Edelstein wird intuitiv ausgewählt – für seine energetische Qualität und Schönheit.
+                  Kleine Edelstein-Chips werden intuitiv ausgewählt – für ihre energetische Qualität und Schönheit.
                 </p>
               </div>
             </div>
@@ -69,15 +68,15 @@ export const HandwerkSection = () => {
 
           <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-medium)] group">
             <img
-              src={workshopTweezersPlacement}
-              alt="Präzises Platzieren von Edelsteinen mit Pinzette in die Harzform"
+              src={workshopCrystalPlacement}
+              alt="Präzises Platzieren eines echten Amethyst-Kristalls mit Pinzette in die Harzform"
               className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <h3 className="text-2xl font-bold text-background mb-2">Schritt 2: Platzierung</h3>
                 <p className="text-base text-background/90">
-                  Mit Pinzette und ruhiger Hand werden die Steine präzise im Harz positioniert.
+                  Mit Pinzette und ruhiger Hand wird jeder Kristall präzise im Harz positioniert.
                 </p>
               </div>
             </div>
