@@ -3,7 +3,6 @@ import { USPSection } from "@/components/USPSection";
 import { StorySection } from "@/components/StorySection";
 import { HandwerkSection } from "@/components/HandwerkSection";
 import { CommunitySection } from "@/components/CommunitySection";
-import { CTAFooter } from "@/components/CTAFooter";
 
 const Index = () => {
   return (
@@ -13,7 +12,6 @@ const Index = () => {
       <StorySection />
       <HandwerkSection />
       <CommunitySection />
-      <CTAFooter />
     </main>
   );
 };

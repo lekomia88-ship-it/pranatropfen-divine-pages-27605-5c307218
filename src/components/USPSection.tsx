@@ -1,25 +1,25 @@
-import { Sparkles, Heart, Zap, ShieldCheck } from "lucide-react";
+import { Moon, Waves, Gem, Shield } from "lucide-react";
 
 const usps = [
   {
-    icon: Sparkles,
+    icon: Gem,
     title: "Handgefertigt in Deutschland",
     description: "Jedes Stück ein Unikat",
   },
   {
-    icon: Heart,
+    icon: Shield,
     title: "30 Tage Rückgabe",
     description: "Risikofrei bestellen",
   },
   {
-    icon: Zap,
+    icon: Waves,
     title: "Versand ab 70 € gratis",
     description: "Schnelle Lieferung",
   },
   {
-    icon: ShieldCheck,
-    title: "Sichere Zahlung",
-    description: "PayPal & Karte",
+    icon: Moon,
+    title: "Energetisch aufgeladen",
+    description: "Mit Intention gefertigt",
   },
 ];
 
@@ -31,9 +31,10 @@ export const USPSection = () => {
           {usps.map((usp, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center group"
+              className="flex flex-col items-center text-center group animate-fade-in"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-all duration-300">
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300 shadow-[var(--shadow-soft)] group-hover:shadow-[var(--shadow-glow)]">
                 <usp.icon className="w-8 h-8 text-primary" strokeWidth={1.5} />
               </div>
               <h3 className="font-semibold text-foreground mb-1">
