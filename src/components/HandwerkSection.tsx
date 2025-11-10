@@ -8,12 +8,14 @@ import workshopEnergyWorkspace from "@/assets/workshop-energy-workspace.jpg";
 
 export const HandwerkSection = () => {
   return (
-    <section id="handwerk" className="py-24 bg-gradient-to-b from-secondary/30 via-background to-secondary/20 relative overflow-hidden">
-      {/* Subtle celestial symbols */}
-      <MoonSymbol className="absolute top-16 left-12 w-16 h-16 text-gold opacity-[0.15]" />
-      <SunSymbol className="absolute bottom-24 right-16 w-14 h-14 text-gold-light opacity-[0.13]" />
-      <FlowerOfLife className="absolute top-1/3 right-[-120px] w-[350px] h-[350px] text-primary opacity-[0.10]" />
-      <SacredTriangles className="absolute bottom-1/4 left-[-80px] w-[280px] h-[280px] text-primary opacity-[0.10]" />
+    <section id="handwerk" className="py-24 bg-gradient-to-b from-background via-secondary/30 to-background relative overflow-hidden">
+      {/* Large visible sacred geometry */}
+      <FlowerOfLife className="absolute top-[-100px] right-[-80px] w-[500px] h-[500px] text-primary opacity-[0.20]" />
+      <SacredTriangles className="absolute bottom-[-120px] left-[-100px] w-[450px] h-[450px] text-primary opacity-[0.18]" />
+      
+      {/* Celestial symbols */}
+      <MoonSymbol className="absolute top-1/4 left-16 w-[120px] h-[120px] text-gold opacity-[0.22]" />
+      <SunSymbol className="absolute bottom-1/3 right-20 w-[100px] h-[100px] text-gold-light opacity-[0.20]" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
