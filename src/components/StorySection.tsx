@@ -1,6 +1,4 @@
 import { MoonSymbol, SunSymbol } from "./CelestialSymbols";
-import { HexagonPattern } from "./SacredGeometry";
-import { Sparkles, Stars } from "lucide-react";
 import modelImage from "@/assets/model-jewelry-1.jpg";
 import modelImage2 from "@/assets/model-jewelry-2.jpg";
 
@@ -24,9 +22,6 @@ export const StorySection = () => {
       {/* Subtle sun symbols scattered */}
       <SunSymbol className="absolute top-32 left-24 w-12 h-12 text-gold-light opacity-8" />
       <SunSymbol className="absolute bottom-24 right-16 w-10 h-10 text-gold opacity-6" />
-      <HexagonPattern className="absolute bottom-[-100px] left-[-50px] w-[350px] h-[350px] text-primary opacity-[0.04]" />
-      <Sparkles className="absolute top-1/3 right-[8%] w-14 h-14 text-gold-light opacity-[0.06]" />
-      <Stars className="absolute bottom-1/4 left-[12%] w-10 h-10 text-primary opacity-[0.05]" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}

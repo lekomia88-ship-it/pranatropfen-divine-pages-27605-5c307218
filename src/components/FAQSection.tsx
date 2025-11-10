@@ -4,8 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { FlowerOfLife, HexagonPattern } from "./SacredGeometry";
-import { Sparkles, Gem } from "lucide-react";
+import { FlowerOfLife } from "./SacredGeometry";
 
 const faqs = [
   {
@@ -52,13 +51,10 @@ const faqs = [
 
 export const FAQSection = () => {
   return (
-    <section className="py-16 bg-background relative overflow-hidden">
+    <section className="py-24 bg-background relative overflow-hidden">
       {/* Subtle Background Geometry */}
       <FlowerOfLife className="absolute top-20 right-[-100px] w-[400px] h-[400px] text-primary opacity-[0.04]" />
       <FlowerOfLife className="absolute bottom-20 left-[-100px] w-[400px] h-[400px] text-primary opacity-[0.04]" />
-      <HexagonPattern className="absolute top-1/2 left-[5%] w-[200px] h-[200px] text-gold opacity-[0.03]" />
-      <Sparkles className="absolute top-[20%] right-[8%] w-12 h-12 text-primary opacity-[0.06]" />
-      <Gem className="absolute bottom-[15%] right-[12%] w-10 h-10 text-gold-light opacity-[0.05]" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}

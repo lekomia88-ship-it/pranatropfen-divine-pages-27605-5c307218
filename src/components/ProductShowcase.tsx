@@ -38,7 +38,7 @@ const products = [
 
 export const ProductShowcase = () => {
   return (
-    <section id="kollektion" className="py-16 bg-secondary/30 relative overflow-hidden">
+    <section id="kollektion" className="py-24 bg-secondary/30 relative overflow-hidden">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">

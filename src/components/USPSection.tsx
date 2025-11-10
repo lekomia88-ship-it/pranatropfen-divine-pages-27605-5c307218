@@ -1,6 +1,4 @@
 import { Moon, Waves, Gem, Shield } from "lucide-react";
-import { SacredTriangles } from "./SacredGeometry";
-import { Sparkles } from "lucide-react";
 
 const usps = [
   {
@@ -27,13 +25,8 @@ const usps = [
 
 export const USPSection = () => {
   return (
-    <section className="py-12 bg-background relative overflow-hidden">
-      {/* Spiritual Background Elements */}
-      <SacredTriangles className="absolute top-0 left-[-50px] w-[300px] h-[300px] text-primary opacity-[0.03]" />
-      <Sparkles className="absolute top-1/2 right-[10%] w-12 h-12 text-gold opacity-[0.08]" />
-      <Moon className="absolute bottom-8 left-[15%] w-10 h-10 text-primary opacity-[0.06]" />
-      
-      <div className="container mx-auto px-6 relative z-10">
+    <section className="py-12 bg-background relative">
+      <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {usps.map((usp, index) => (
             <div
