@@ -1,31 +1,29 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, ArrowRight } from "lucide-react";
 import { MoonSymbol } from "./CelestialSymbols";
-import pranatropfenProduct from "@/assets/pranatropfen-product-real.jpg";
-import pranatropfenDetail from "@/assets/pranatropfen-detail.jpg";
 import productZadkiel from "@/assets/product-zadkiel.jpg";
 
 const testimonials = [
   {
-    text: "Heute ist mein Pranatropfen angekommen und ich trage ihn ca. 3 Stunden... Ich war schon lange nicht mehr so entspannt und einfach so frei.",
+    text: "Ich trage ihn ca. 3 Stunden und war schon lange nicht mehr so entspannt und einfach so frei.",
     product: {
       name: "Pranatropfen® Matrix",
-      image: pranatropfenProduct,
+      image: "https://www.oz-orgonite.de/thumbnail/d6/c1/0c/1721638785/matrixgro_800x800.jpg?ts=1721638800",
       link: "https://www.oz-orgonite.de/Pranatropfen-Matrix/018b846c648670cd901fbc15f8941713"
     },
     rating: 5,
   },
   {
-    text: "Ich fühle mich ruhiger und ausgeglichener. Mein Vertrauen ist gestiegen. Der Anhänger sieht auch sehr schön aus.",
+    text: "Ich fühle mich ruhiger und ausgeglichener. Mein Vertrauen ist gestiegen. Sehr schön!",
     product: {
       name: "Pranatropfen® Uriel",
-      image: pranatropfenDetail,
+      image: "https://www.oz-orgonite.de/thumbnail/a4/99/52/1721465054/urielgro_800x800.jpg?ts=1721465063",
       link: "https://www.oz-orgonite.de/Pranatropfen-Uriel/018b846c64c8715cb6f3b0dc75fea9d5"
     },
     rating: 5,
   },
   {
-    text: "Ich bin beeindruckt von der Wirkung! Besonders hervorzuheben ist die Schönheit – kleine Kunstwerke. Es zaubert mir jedes Mal ein Lächeln aufs Gesicht.",
+    text: "Besonders hervorzuheben ist die Schönheit – kleine Kunstwerke, die mich lächeln lassen.",
     product: {
       name: "Pranatropfen® Zadkiel",
       image: productZadkiel,
@@ -55,16 +53,16 @@ export const TestimonialsSection = () => {
           </p>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+        {/* Testimonials Grid - equal height cards */}
+        <div className="grid md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="border border-gold-100/80 bg-card rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group"
+              className="border border-gold-100/80 bg-card rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group flex flex-col"
             >
-              <CardContent className="p-0">
-                {/* Quote */}
-                <div className="p-6 pb-4">
+              <CardContent className="p-0 flex flex-col flex-1">
+                {/* Quote - flex-1 to push product link to bottom */}
+                <div className="p-6 pb-4 flex-1">
                   {/* Stars */}
                   <div className="flex gap-0.5 mb-4">
                     {Array.from({ length: testimonial.rating }).map((_, i) => (
@@ -85,9 +83,9 @@ export const TestimonialsSection = () => {
                   href={testimonial.product.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 bg-beige-50 border-t border-gold-100/50 hover:bg-beige-100 transition-colors"
+                  className="flex items-center gap-4 p-4 bg-beige-50 border-t border-gold-100/50 hover:bg-beige-100 transition-colors mt-auto"
                 >
-                  <div className="w-16 h-16 rounded-xl overflow-hidden border border-gold-200/30 flex-shrink-0">
+                  <div className="w-16 h-16 rounded-xl overflow-hidden border border-gold-200/30 flex-shrink-0 bg-white">
                     <img 
                       src={testimonial.product.image} 
                       alt={testimonial.product.name}
