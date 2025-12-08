@@ -1,9 +1,15 @@
 import { SunSymbol } from "./CelestialSymbols";
 import { Sparkles, Heart, Globe, Leaf } from "lucide-react";
+import { LucideIcon } from "lucide-react";
 import modelImage from "@/assets/model-jewelry-1.jpg";
 import modelImage2 from "@/assets/model-jewelry-2.jpg";
 
-const features = [
+interface Feature {
+  icon: LucideIcon;
+  label: string;
+}
+
+const features: Feature[] = [
   { icon: Sparkles, label: "Mit Liebe gefertigt" },
   { icon: Globe, label: "Made in Germany" },
   { icon: Heart, label: "Einzigartiges Design" },
@@ -58,8 +64,8 @@ export const StorySection = () => {
 
             {/* Headline */}
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground leading-tight mb-4">
-              Energie trifft{" "}
-              <span className="text-gold-600">Ästhetik</span>
+              Energie in die{" "}
+              <span className="text-gold-600">Welt tragen</span>
             </h2>
 
             {/* Gold line */}
@@ -67,12 +73,14 @@ export const StorySection = () => {
 
             {/* Description */}
             <p className="text-lg text-muted-foreground leading-relaxed mb-4 max-w-lg mx-auto lg:mx-0">
-              Jeder Pranatropfen® vereint natürliche Materialien – Kunstharz,
-              Edelmetalle und Edelsteine – in einem harmonischen Design.
+              Wir glauben daran, dass jeder Mensch Zugang zu positiver Energie verdient. 
+              Mit jedem Pranatropfen® möchten wir ein Stück dieser Kraft weitergeben.
             </p>
             
             <p className="text-base text-muted-foreground leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
-              Für Menschen, die ihre <span className="font-semibold text-foreground">Energie spüren</span> und ihren <span className="font-semibold text-foreground">Stil leben</span>. Jedes Stück wird mit Intention und Sorgfalt hergestellt.
+              Ob als täglicher Begleiter oder als Geschenk für einen besonderen Menschen – 
+              unsere Vision ist es, <span className="font-semibold text-foreground">Harmonie und Wohlbefinden</span> in 
+              den Alltag zu bringen.
             </p>
 
             {/* Feature Pills */}
