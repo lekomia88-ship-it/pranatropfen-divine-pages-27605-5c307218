@@ -48,7 +48,7 @@ export const TestimonialsSection = () => {
           </h2>
           <div className="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto mb-4 sm:mb-6" />
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-            Vielen Dank für euer wunderbares Feedback!
+            Vielen Dank für Euer Feedback an unsere Kunstwerkstatt – Lindsey und Corinna bedanken sich.
           </p>
         </div>
 
