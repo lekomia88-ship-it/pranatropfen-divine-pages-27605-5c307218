@@ -4,9 +4,9 @@ import modelImage2 from "@/assets/model-jewelry-2.jpg";
 
 export const StorySection = () => {
   return (
-    <section id="story" className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-secondary/30 to-secondary/10 relative overflow-hidden">
+    <section id="story" className="py-12 sm:py-16 md:py-20 bg-gradient-beige relative overflow-hidden">
       {/* Single large decorative sun in corner */}
-      <SunSymbol className="absolute bottom-[-100px] right-[-80px] w-[240px] h-[240px] text-gold opacity-[0.10]" />
+      <SunSymbol className="absolute bottom-[-100px] right-[-80px] w-[240px] h-[240px] text-gold-400 opacity-[0.10]" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Header */}
@@ -53,16 +53,16 @@ export const StorySection = () => {
 
             {/* Tags */}
             <div className="flex flex-wrap gap-2 sm:gap-3">
-              <div className="inline-block px-4 sm:px-6 py-1.5 sm:py-2 rounded-full bg-primary/10 text-primary font-medium text-xs sm:text-sm">
+              <div className="inline-block px-4 sm:px-6 py-1.5 sm:py-2 rounded-full bg-gold-100/60 text-gold-700 font-medium text-xs sm:text-sm">
                 ✦ Handcrafted with Love
               </div>
-              <div className="inline-block px-4 sm:px-6 py-1.5 sm:py-2 rounded-full bg-primary/10 text-primary font-medium text-xs sm:text-sm">
+              <div className="inline-block px-4 sm:px-6 py-1.5 sm:py-2 rounded-full bg-gold-100/60 text-gold-700 font-medium text-xs sm:text-sm">
                 ✧ Made in Germany
               </div>
-              <div className="inline-block px-4 sm:px-6 py-1.5 sm:py-2 rounded-full bg-primary/10 text-primary font-medium text-xs sm:text-sm">
+              <div className="inline-block px-4 sm:px-6 py-1.5 sm:py-2 rounded-full bg-gold-100/60 text-gold-700 font-medium text-xs sm:text-sm">
                 ◈ Unique Design
               </div>
-              <div className="inline-block px-4 sm:px-6 py-1.5 sm:py-2 rounded-full bg-primary/10 text-primary font-medium text-xs sm:text-sm">
+              <div className="inline-block px-4 sm:px-6 py-1.5 sm:py-2 rounded-full bg-gold-100/60 text-gold-700 font-medium text-xs sm:text-sm">
                 ☽ Natural Energy
               </div>
             </div>

@@ -51,34 +51,34 @@ const faqs = [
 
 export const FAQSection = () => {
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
+    <section className="py-16 sm:py-20 md:py-24 bg-background relative overflow-hidden">
       {/* Single subtle background geometry */}
-      <SacredTriangles className="absolute bottom-[-120px] right-[-100px] w-[380px] h-[380px] text-primary opacity-[0.08]" />
+      <SacredTriangles className="absolute bottom-[-120px] right-[-100px] w-[380px] h-[380px] text-gold-400 opacity-[0.08]" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 sm:mb-6">
             Häufige Fragen
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
             Alles, was du über die Herstellung, Materialien und Pflege wissen möchtest
           </p>
         </div>
 
         {/* FAQ Accordion */}
         <div className="max-w-4xl mx-auto">
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
             {faqs.map((faq, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border border-border/50 rounded-2xl px-6 bg-secondary/20 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] transition-all duration-300"
+                className="border border-border/50 rounded-xl sm:rounded-2xl px-4 sm:px-6 bg-beige-100/40 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] transition-all duration-300"
               >
-                <AccordionTrigger className="text-left text-base md:text-lg font-semibold text-foreground hover:text-primary transition-colors py-6 hover:no-underline">
+                <AccordionTrigger className="text-left text-sm sm:text-base md:text-lg font-semibold text-foreground hover:text-gold-600 transition-colors py-4 sm:py-6 hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed pb-6 pt-2">
+                <AccordionContent className="text-muted-foreground leading-relaxed pb-4 sm:pb-6 pt-1 sm:pt-2 text-sm sm:text-base">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -87,12 +87,12 @@ export const FAQSection = () => {
         </div>
 
         {/* Contact CTA */}
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground">
+        <div className="text-center mt-10 sm:mt-12">
+          <p className="text-muted-foreground text-sm sm:text-base">
             Noch Fragen?{" "}
             <a
               href="#"
-              className="text-primary font-semibold hover:underline transition-all"
+              className="text-gold-600 font-semibold hover:text-gold-700 hover:underline transition-all"
             >
               Kontaktiere uns gerne
             </a>

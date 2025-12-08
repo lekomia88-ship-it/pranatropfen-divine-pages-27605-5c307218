@@ -2,9 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
-import { MoonSymbol, SunSymbol } from "./CelestialSymbols";
-import { FlowerOfLife } from "./SacredGeometry";
-import { Sparkles } from "lucide-react";
+import { SunSymbol } from "./CelestialSymbols";
 
 export const NewsletterSection = () => {
   const [email, setEmail] = useState("");
@@ -21,7 +19,6 @@ export const NewsletterSection = () => {
       return;
     }
 
-    // Here you would normally send to your newsletter service
     toast({
       title: "Willkommen in der Community! ✨",
       description: "Du erhältst bald Post von uns mit allen Updates und Inspirationen.",
@@ -31,31 +28,31 @@ export const NewsletterSection = () => {
   };
 
   return (
-    <section className="py-24 bg-gradient-to-b from-secondary/15 to-background relative overflow-hidden">
+    <section className="py-16 sm:py-20 md:py-24 bg-gradient-beige relative overflow-hidden">
       {/* Single decorative element */}
-      <SunSymbol className="absolute top-[-70px] left-[-60px] w-[180px] h-[180px] text-gold-light opacity-[0.09]" />
+      <SunSymbol className="absolute top-[-70px] left-[-60px] w-[180px] h-[180px] text-gold-300 opacity-[0.09]" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-3xl mx-auto">
           {/* Content */}
-          <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
               Bleib mit uns verbunden
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
               Erhalte Inspiration, Vollmond-Rituale, Pflegetipps und exklusive Einblicke 
               in neue Kollektionen – direkt in dein Postfach.
             </p>
           </div>
 
           {/* Newsletter Form */}
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-xl mx-auto">
             <Input
               type="email"
               placeholder="Deine E-Mail Adresse"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 h-12 px-6 rounded-full border-primary/20 bg-background/80 backdrop-blur-sm focus:border-primary focus:ring-primary"
+              className="flex-1 h-11 sm:h-12 px-5 sm:px-6 rounded-full border-gold-300/30 bg-card/80 backdrop-blur-sm focus:border-gold-500 focus:ring-gold-500"
             />
             <Button
               type="submit"
@@ -68,29 +65,29 @@ export const NewsletterSection = () => {
           </form>
 
           {/* Trust Message */}
-          <p className="text-center mt-6 text-sm text-muted-foreground">
+          <p className="text-center mt-5 sm:mt-6 text-xs sm:text-sm text-muted-foreground">
             Kein Spam. Nur gute Energie. Abmeldung jederzeit möglich.
           </p>
 
           {/* Benefits */}
-          <div className="grid sm:grid-cols-3 gap-6 mt-12">
-            <div className="text-center space-y-2">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                <span className="text-2xl">🌙</span>
+          <div className="grid grid-cols-3 gap-4 sm:gap-6 mt-10 sm:mt-12">
+            <div className="text-center space-y-1.5 sm:space-y-2">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-100/60 flex items-center justify-center mx-auto">
+                <span className="text-lg sm:text-2xl">🌙</span>
               </div>
-              <p className="text-sm font-medium text-foreground">Vollmond-Rituale</p>
+              <p className="text-xs sm:text-sm font-medium text-foreground">Vollmond-Rituale</p>
             </div>
-            <div className="text-center space-y-2">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                <span className="text-2xl">✨</span>
+            <div className="text-center space-y-1.5 sm:space-y-2">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-100/60 flex items-center justify-center mx-auto">
+                <span className="text-lg sm:text-2xl">✨</span>
               </div>
-              <p className="text-sm font-medium text-foreground">Exklusive Einblicke</p>
+              <p className="text-xs sm:text-sm font-medium text-foreground">Exklusive Einblicke</p>
             </div>
-            <div className="text-center space-y-2">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                <span className="text-2xl">💎</span>
+            <div className="text-center space-y-1.5 sm:space-y-2">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-100/60 flex items-center justify-center mx-auto">
+                <span className="text-lg sm:text-2xl">💎</span>
               </div>
-              <p className="text-sm font-medium text-foreground">Neue Kollektionen</p>
+              <p className="text-xs sm:text-sm font-medium text-foreground">Neue Kollektionen</p>
             </div>
           </div>
         </div>

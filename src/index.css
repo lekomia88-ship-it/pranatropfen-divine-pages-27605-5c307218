@@ -8,80 +8,135 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Pranatropfen® Design System - Warm Beige & Gold */
-    --background: 40 33% 97%; /* #faf7f2 - soft warm beige */
-    --foreground: 30 9% 10%; /* #1a1815 - dark warm text */
-
-    --card: 40 40% 98%;
-    --card-foreground: 30 9% 10%;
-
-    --popover: 40 33% 97%;
-    --popover-foreground: 30 9% 10%;
-
-    --primary: 40 38% 56%; /* #b89a6b - warm gold */
-    --primary-foreground: 40 33% 97%;
-
-    --secondary: 40 30% 92%;
-    --secondary-foreground: 30 9% 10%;
-
-    --muted: 40 25% 90%;
-    --muted-foreground: 30 9% 45%;
-
-    --accent: 40 38% 56%; /* gold accent */
-    --accent-foreground: 40 33% 97%;
-
+    /* Primary - Gold */
+    --primary: 38 65% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 38 70% 60%;
+    
+    /* Secondary - Warm Beige */
+    --secondary: 35 45% 85%;
+    --secondary-foreground: 20 10% 15%;
+    
+    /* Background & Surfaces */
+    --background: 30 40% 98%;
+    --foreground: 20 10% 15%;
+    
+    /* Muted */
+    --muted: 35 25% 92%;
+    --muted-foreground: 20 8% 35%;
+    
+    /* Accent - Bright Gold */
+    --accent: 38 70% 55%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Card */
+    --card: 0 0% 100%;
+    --card-foreground: 20 10% 15%;
+    
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 10% 15%;
+    
+    /* Border */
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 38 65% 50%;
+    
+    /* Destructive */
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 40 33% 97%;
-
-    --border: 40 20% 88%;
-    --input: 40 20% 90%;
-    --ring: 40 38% 56%;
-
-    --radius: 1rem; /* softer, more rounded */
-
-    /* Custom Design Tokens */
-    --gold: 40 38% 56%;
-    --gold-light: 40 38% 66%;
-    --gold-dark: 40 38% 46%;
-    --beige: 40 33% 97%;
-    --beige-dark: 40 30% 92%;
-    --text-dark: 30 9% 10%;
-
+    --destructive-foreground: 0 0% 98%;
+    
+    /* Chart colors */
+    --chart-1: 38 65% 50%;
+    --chart-2: 35 45% 65%;
+    --chart-3: 30 50% 75%;
+    --chart-4: 42 75% 60%;
+    --chart-5: 32 55% 70%;
+    
+    /* Gold Variants */
+    --gold-50: 45 100% 96%;
+    --gold-100: 42 100% 90%;
+    --gold-200: 40 95% 80%;
+    --gold-300: 39 90% 70%;
+    --gold-400: 38 80% 60%;
+    --gold-500: 38 65% 50%;
+    --gold-600: 36 60% 42%;
+    --gold-700: 34 55% 35%;
+    --gold-800: 32 50% 28%;
+    --gold-900: 30 45% 20%;
+    
+    /* Beige Variants */
+    --beige-50: 40 50% 98%;
+    --beige-100: 38 45% 95%;
+    --beige-200: 36 40% 90%;
+    --beige-300: 35 45% 85%;
+    --beige-400: 34 40% 75%;
+    --beige-500: 33 35% 65%;
+    --beige-600: 32 30% 55%;
+    --beige-700: 30 28% 45%;
+    --beige-800: 28 25% 35%;
+    --beige-900: 25 22% 25%;
+    
+    /* Shadows with gold glow */
+    --shadow-sm: 0 1px 2px 0 hsl(var(--gold-900) / 0.05);
+    --shadow-soft: 0 2px 8px 0 hsl(var(--gold-900) / 0.06);
+    --shadow-medium: 0 4px 6px -1px hsl(var(--gold-900) / 0.1), 0 2px 4px -1px hsl(var(--gold-900) / 0.06);
+    --shadow-lg: 0 10px 15px -3px hsl(var(--gold-900) / 0.1), 0 4px 6px -2px hsl(var(--gold-900) / 0.05);
+    --shadow-large: 0 16px 48px hsl(var(--gold-900) / 0.16);
+    --shadow-xl: 0 20px 25px -5px hsl(var(--gold-900) / 0.1), 0 10px 10px -5px hsl(var(--gold-900) / 0.04);
+    --shadow-glow: 0 0 20px hsl(var(--gold-500) / 0.3), 0 0 40px hsl(var(--gold-400) / 0.2);
+    --shadow-glow-strong: 0 0 30px hsl(var(--gold-500) / 0.5), 0 0 60px hsl(var(--gold-400) / 0.3);
+    --shadow-elegant: 0 10px 40px -12px hsl(var(--gold-500) / 0.25);
+    
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(40 33% 97%) 0%, hsl(40 38% 90%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(40 38% 56%) 0%, hsl(40 38% 66%) 100%);
-    --gradient-overlay: linear-gradient(to bottom, hsla(30 9% 10% / 0.6), hsla(30 9% 10% / 0.3));
-
-    /* Shadows */
-    --shadow-soft: 0 4px 16px hsla(40 38% 56% / 0.08);
-    --shadow-medium: 0 8px 24px hsla(40 38% 56% / 0.12);
-    --shadow-large: 0 16px 48px hsla(40 38% 56% / 0.16);
-    --shadow-glow: 0 0 32px hsla(40 38% 56% / 0.2);
-    --shadow-elegant: 0 10px 40px -12px hsla(40 38% 56% / 0.25);
-
+    --gradient-gold: linear-gradient(135deg, hsl(var(--gold-400)), hsl(var(--gold-600)));
+    --gradient-beige: linear-gradient(180deg, hsl(var(--beige-100)), hsl(var(--beige-200)));
+    --gradient-radial-gold: radial-gradient(circle, hsl(var(--gold-300) / 0.2), transparent 70%);
+    --gradient-overlay: linear-gradient(to bottom, hsl(var(--foreground) / 0.6), hsl(var(--foreground) / 0.3));
+    
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    --radius: 0.75rem;
   }
 
   .dark {
-    --background: 30 9% 10%;
-    --foreground: 40 33% 97%;
-    --card: 30 9% 12%;
-    --card-foreground: 40 33% 97%;
-    --popover: 30 9% 10%;
-    --popover-foreground: 40 33% 97%;
-    --primary: 40 38% 56%;
-    --primary-foreground: 30 9% 10%;
-    --secondary: 30 9% 15%;
-    --secondary-foreground: 40 33% 97%;
-    --muted: 30 9% 15%;
-    --muted-foreground: 40 20% 65%;
-    --accent: 40 38% 56%;
-    --accent-foreground: 30 9% 10%;
-    --border: 30 9% 20%;
-    --input: 30 9% 20%;
-    --ring: 40 38% 56%;
+    /* OZ Orgonite Dark Theme - Premium, Mystisch, Edel */
+    --background: 220 15% 8%;
+    --foreground: 45 30% 95%;
+    --card: 220 15% 11%;
+    --card-foreground: 45 30% 95%;
+    --popover: 220 15% 10%;
+    --popover-foreground: 45 30% 95%;
+    --primary: 42 75% 55%;
+    --primary-foreground: 220 15% 8%;
+    --primary-glow: 42 80% 65%;
+    --secondary: 220 12% 18%;
+    --secondary-foreground: 45 30% 95%;
+    --muted: 220 12% 15%;
+    --muted-foreground: 45 15% 65%;
+    --accent: 42 75% 55%;
+    --accent-foreground: 220 15% 8%;
+    --border: 220 12% 22%;
+    --input: 220 12% 22%;
+    --ring: 42 75% 55%;
+    
+    /* Dark Gold Variants */
+    --gold-50: 45 80% 95%;
+    --gold-100: 44 75% 85%;
+    --gold-200: 43 70% 75%;
+    --gold-300: 42 75% 65%;
+    --gold-400: 42 75% 55%;
+    --gold-500: 40 70% 48%;
+    --gold-600: 38 65% 40%;
+    --gold-700: 36 60% 32%;
+    --gold-800: 34 55% 24%;
+    --gold-900: 32 50% 16%;
+    
+    /* Dark Shadows */
+    --shadow-glow: 0 0 25px hsl(42 75% 55% / 0.25), 0 0 50px hsl(42 80% 65% / 0.15);
+    --shadow-glow-strong: 0 0 35px hsl(42 75% 55% / 0.4), 0 0 70px hsl(42 80% 65% / 0.25);
   }
 }
 
@@ -91,8 +146,9 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground antialiased;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -103,5 +159,35 @@ All colors MUST be HSL.
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  
+  /* Shadows */
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  .shadow-glow-strong {
+    box-shadow: var(--shadow-glow-strong);
+  }
+  
+  /* Hover effects */
+  .hover-glow {
+    transition: var(--transition-smooth);
+  }
+  .hover-glow:hover {
+    box-shadow: var(--shadow-glow-strong);
+    transform: translateY(-2px);
+  }
+  
+  /* Text shadows for hero sections */
+  .text-shadow-gold {
+    text-shadow: 0 2px 8px hsl(var(--gold-900) / 0.3);
+  }
+  
+  /* Gradient backgrounds */
+  .bg-gradient-gold {
+    background: var(--gradient-gold);
+  }
+  .bg-gradient-beige {
+    background: var(--gradient-beige);
   }
 }

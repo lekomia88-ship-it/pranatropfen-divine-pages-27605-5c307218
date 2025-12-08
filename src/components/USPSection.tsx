@@ -28,7 +28,7 @@ export const USPSection = () => {
   return (
     <section className="py-12 sm:py-14 md:py-16 bg-background relative overflow-hidden">
       {/* Subtle background element - hidden on mobile */}
-      <FlowerOfLife className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] text-primary opacity-[0.06]" />
+      <FlowerOfLife className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] text-gold-400 opacity-[0.06]" />
       
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
@@ -38,8 +38,8 @@ export const USPSection = () => {
               className="flex flex-col items-center text-center group animate-fade-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary/10 flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300 shadow-[var(--shadow-soft)] group-hover:shadow-[var(--shadow-glow)]">
-                <usp.icon className="w-7 h-7 sm:w-8 sm:h-8 text-primary" strokeWidth={1.5} />
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gold-100/50 flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-gold-200/60 group-hover:scale-110 transition-all duration-300 shadow-[var(--shadow-soft)] group-hover:shadow-glow">
+                <usp.icon className="w-7 h-7 sm:w-8 sm:h-8 text-gold-600" strokeWidth={1.5} />
               </div>
               <h3 className="font-semibold text-foreground mb-1 text-sm sm:text-base">
                 {usp.title}

@@ -7,7 +7,6 @@ export const ScrollToProductsButton = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Hide button when user scrolls past 80vh
       setIsVisible(window.scrollY < window.innerHeight * 0.8);
     };
 
@@ -16,7 +15,6 @@ export const ScrollToProductsButton = () => {
   }, []);
 
   const scrollToProducts = () => {
-    // Scroll to bottom of page where products would be
     window.scrollTo({
       top: document.documentElement.scrollHeight,
       behavior: "smooth",
@@ -30,7 +28,7 @@ export const ScrollToProductsButton = () => {
       variant="heroPrimary"
       size="lg"
       onClick={scrollToProducts}
-      className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-50 shadow-[var(--shadow-glow)] animate-fade-in gap-2 text-sm sm:text-base"
+      className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-50 shadow-glow animate-fade-in gap-2 text-sm sm:text-base"
     >
       Zu den Produkten
       <ArrowDown className="w-4 h-4" />
