@@ -31,57 +31,59 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <section className="py-16 sm:py-20 md:py-24 bg-gradient-beige relative overflow-hidden">
-      {/* Single subtle moon */}
-      <MoonSymbol className="absolute top-[-80px] right-[-70px] w-[200px] h-[200px] text-gold-400 opacity-[0.08]" />
+    <section className="py-14 lg:py-18 bg-beige-50 relative overflow-hidden">
+      {/* Subtle moon */}
+      <MoonSymbol className="absolute top-[-80px] right-[-70px] w-[200px] h-[200px] text-gold-300 opacity-[0.08]" />
       
-      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 sm:mb-6">
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
+          <p className="subheadline mb-2">Kundenstimmen</p>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-4">
             Was unsere Träger sagen
           </h2>
-          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+          <div className="gold-line mb-4" />
+          <p className="text-muted-foreground leading-relaxed">
             Echte Erfahrungen von Menschen, die ihre Energie gefunden haben
           </p>
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6">
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="border-border/50 bg-card/80 backdrop-blur-sm shadow-[var(--shadow-medium)] hover:shadow-[var(--shadow-large)] transition-all duration-300 hover:scale-[1.02] animate-fade-in"
+              className="border border-gold-100/80 bg-card rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 animate-fade-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <CardContent className="p-6 sm:p-8">
+              <CardContent className="p-6">
                 {/* Stars */}
-                <div className="flex gap-1 mb-3 sm:mb-4">
+                <div className="flex gap-0.5 mb-3">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
                     <Star
                       key={i}
-                      className="w-4 h-4 sm:w-5 sm:h-5 fill-gold-500 text-gold-500"
+                      className="w-4 h-4 fill-gold-500 text-gold-500"
                     />
                   ))}
                 </div>
 
                 {/* Quote */}
-                <p className="text-foreground leading-relaxed mb-5 sm:mb-6 italic text-sm sm:text-base">
+                <p className="text-foreground leading-relaxed mb-5 italic text-sm">
                   "{testimonial.text}"
                 </p>
 
                 {/* Author */}
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-100/60 flex items-center justify-center">
-                    <span className="text-gold-700 font-semibold text-base sm:text-lg">
+                  <div className="w-10 h-10 rounded-full bg-gold-100/50 flex items-center justify-center">
+                    <span className="text-gold-700 font-semibold text-sm">
                       {testimonial.name.charAt(0)}
                     </span>
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground text-sm sm:text-base">
+                    <p className="font-semibold text-foreground text-sm">
                       {testimonial.name}
                     </p>
-                    <p className="text-xs sm:text-sm text-muted-foreground">
+                    <p className="text-xs text-muted-foreground">
                       {testimonial.location}
                     </p>
                   </div>
@@ -92,10 +94,10 @@ export const TestimonialsSection = () => {
         </div>
 
         {/* Trust Badge */}
-        <div className="text-center mt-10 sm:mt-12">
-          <p className="text-muted-foreground text-sm sm:text-base">
+        <div className="text-center mt-10">
+          <p className="text-muted-foreground text-sm">
             Über{" "}
-            <span className="font-bold text-gold-600">20.000 zufriedene Träger</span>{" "}
+            <span className="font-semibold text-gold-600">20.000 zufriedene Träger</span>{" "}
             weltweit
           </p>
         </div>

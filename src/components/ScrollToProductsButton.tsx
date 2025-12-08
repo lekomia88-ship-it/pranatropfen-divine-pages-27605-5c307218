@@ -25,10 +25,10 @@ export const ScrollToProductsButton = () => {
 
   return (
     <Button
-      variant="heroPrimary"
+      variant="default"
       size="lg"
       onClick={scrollToProducts}
-      className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-50 shadow-glow animate-fade-in gap-2 text-sm sm:text-base"
+      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 shadow-glow animate-fade-in"
     >
       Zu den Produkten
       <ArrowDown className="w-4 h-4" />
