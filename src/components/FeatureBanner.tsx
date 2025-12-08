@@ -16,17 +16,21 @@ const features: Feature[] = [
 
 export const FeatureBanner = () => {
   return (
-    <div className="bg-beige-100 border-y border-gold-100/50 py-6 sm:py-8 overflow-hidden">
+    <div className="bg-beige-100 border-y border-gold-100/50 py-5 sm:py-6 lg:py-8 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+        {/* Mobile: Scrollable horizontal, Desktop: Grid */}
+        <div className="flex lg:grid lg:grid-cols-4 gap-6 lg:gap-8 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0 -mx-4 px-4 lg:mx-0 lg:px-0 scrollbar-hide">
           {features.map((feature, index) => (
-            <div key={index} className="flex items-center gap-3 justify-center">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gold-100/60 flex items-center justify-center">
-                <feature.icon className="w-5 h-5 text-gold-600" strokeWidth={1.5} />
+            <div 
+              key={index} 
+              className="flex items-center gap-3 flex-shrink-0 min-w-[180px] lg:min-w-0 lg:justify-center"
+            >
+              <div className="flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gold-100/60 flex items-center justify-center">
+                <feature.icon className="w-4 h-4 sm:w-5 sm:h-5 text-gold-600" strokeWidth={1.5} />
               </div>
               <div className="text-left">
-                <p className="font-semibold text-foreground text-sm">{feature.label}</p>
-                <p className="text-muted-foreground text-xs">{feature.description}</p>
+                <p className="font-semibold text-foreground text-xs sm:text-sm whitespace-nowrap">{feature.label}</p>
+                <p className="text-muted-foreground text-xs whitespace-nowrap">{feature.description}</p>
               </div>
             </div>
           ))}

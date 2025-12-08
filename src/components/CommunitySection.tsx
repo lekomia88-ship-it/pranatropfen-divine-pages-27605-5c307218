@@ -4,10 +4,10 @@ import communityBg from "@/assets/community-bg.jpg";
 
 export const CommunitySection = () => {
   return (
-    <section className="py-16 lg:py-24 bg-background">
+    <section className="py-12 sm:py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
         {/* Header */}
-        <div className="text-center mb-10 lg:mb-12">
+        <div className="text-center mb-8 sm:mb-10 lg:mb-12">
           <p className="subheadline mb-3">Unsere Community</p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-4">
             Werde Teil der <span className="text-gold-600">Gemeinschaft</span>

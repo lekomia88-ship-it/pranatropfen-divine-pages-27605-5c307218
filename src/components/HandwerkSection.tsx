@@ -14,13 +14,13 @@ const highlights = [
 
 export const HandwerkSection = () => {
   return (
-    <section id="handwerk" className="py-16 lg:py-24 bg-beige-50 relative overflow-hidden">
+    <section id="handwerk" className="py-12 sm:py-16 lg:py-24 bg-beige-50 relative overflow-hidden">
       {/* Sacred geometry */}
       <FlowerOfLife className="absolute top-[-140px] left-[-120px] w-[450px] h-[450px] text-gold-200 opacity-[0.06]" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 lg:mb-16">
           <p className="subheadline mb-3">Der Entstehungsprozess</p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-4">
             Die Kunst des <span className="text-gold-600">Pranatropfens®</span>

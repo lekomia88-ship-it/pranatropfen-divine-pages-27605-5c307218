@@ -29,12 +29,12 @@ export const NewsletterSection = () => {
   };
 
   return (
-    <section className="py-16 lg:py-24 bg-beige-50 relative overflow-hidden">
+    <section className="py-12 sm:py-16 lg:py-24 bg-beige-50 relative overflow-hidden">
       {/* Decorative element */}
       <SunSymbol className="absolute top-[-70px] left-[-60px] w-[180px] h-[180px] text-gold-300 opacity-[0.08]" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left: Content */}
           <div className="text-center lg:text-left">
             {/* Badge */}
