@@ -3,6 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { SunSymbol } from "./CelestialSymbols";
+import { Moon, Sparkles, Gem, ArrowRight } from "lucide-react";
+
+const benefits = [
+  { icon: Moon, label: "Vollmond-Rituale" },
+  { icon: Sparkles, label: "Exklusive Einblicke" },
+  { icon: Gem, label: "Neue Kollektionen" },
+];
 
 export const NewsletterSection = () => {
   const [email, setEmail] = useState("");
@@ -20,75 +27,66 @@ export const NewsletterSection = () => {
     }
 
     toast({
-      title: "Willkommen in der Community! ✨",
-      description: "Du erhältst bald Post von uns mit allen Updates und Inspirationen.",
+      title: "Willkommen in der Community!",
+      description: "Du erhältst bald Post von uns.",
     });
     
     setEmail("");
   };
 
   return (
-    <section className="py-16 sm:py-20 md:py-24 bg-gradient-beige relative overflow-hidden">
-      {/* Single decorative element */}
+    <section className="py-14 lg:py-18 bg-beige-50 relative overflow-hidden">
+      {/* Decorative element */}
       <SunSymbol className="absolute top-[-70px] left-[-60px] w-[180px] h-[180px] text-gold-300 opacity-[0.09]" />
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        <div className="max-w-3xl mx-auto">
-          {/* Content */}
-          <div className="text-center mb-6 sm:mb-8">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
-              Bleib mit uns verbunden
-            </h2>
-            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-              Erhalte Inspiration, Vollmond-Rituale, Pflegetipps und exklusive Einblicke 
-              in neue Kollektionen – direkt in dein Postfach.
-            </p>
-          </div>
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl">
+        <div className="max-w-2xl mx-auto text-center">
+          {/* Header */}
+          <p className="subheadline mb-2">Newsletter</p>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-4">
+            Bleib mit uns verbunden
+          </h2>
+          <div className="gold-line mb-4" />
+          <p className="text-muted-foreground leading-relaxed mb-8">
+            Erhalte Inspiration, Vollmond-Rituale und exklusive Einblicke 
+            in neue Kollektionen – direkt in dein Postfach.
+          </p>
 
           {/* Newsletter Form */}
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-xl mx-auto">
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-6">
             <Input
               type="email"
               placeholder="Deine E-Mail Adresse"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 h-11 sm:h-12 px-5 sm:px-6 rounded-full border-gold-300/30 bg-card/80 backdrop-blur-sm focus:border-gold-500 focus:ring-gold-500"
+              className="flex-1 h-11 px-5 rounded-full border-gold-200 bg-card focus:border-gold-400 focus:ring-gold-400"
             />
             <Button
               type="submit"
               variant="default"
-              size="lg"
-              className="sm:w-auto w-full rounded-full"
+              size="default"
+              className="sm:w-auto w-full"
             >
               Anmelden
+              <ArrowRight className="w-4 h-4" />
             </Button>
           </form>
 
           {/* Trust Message */}
-          <p className="text-center mt-5 sm:mt-6 text-xs sm:text-sm text-muted-foreground">
+          <p className="text-xs text-muted-foreground mb-8">
             Kein Spam. Nur gute Energie. Abmeldung jederzeit möglich.
           </p>
 
           {/* Benefits */}
-          <div className="grid grid-cols-3 gap-4 sm:gap-6 mt-10 sm:mt-12">
-            <div className="text-center space-y-1.5 sm:space-y-2">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-100/60 flex items-center justify-center mx-auto">
-                <span className="text-lg sm:text-2xl">🌙</span>
+          <div className="flex justify-center gap-6 sm:gap-8">
+            {benefits.map((benefit, index) => (
+              <div key={index} className="text-center space-y-1.5">
+                <div className="w-10 h-10 rounded-full bg-gold-100/50 flex items-center justify-center mx-auto">
+                  <benefit.icon className="w-5 h-5 text-gold-600" />
+                </div>
+                <p className="text-xs font-medium text-foreground">{benefit.label}</p>
               </div>
-              <p className="text-xs sm:text-sm font-medium text-foreground">Vollmond-Rituale</p>
-            </div>
-            <div className="text-center space-y-1.5 sm:space-y-2">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-100/60 flex items-center justify-center mx-auto">
-                <span className="text-lg sm:text-2xl">✨</span>
-              </div>
-              <p className="text-xs sm:text-sm font-medium text-foreground">Exklusive Einblicke</p>
-            </div>
-            <div className="text-center space-y-1.5 sm:space-y-2">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-100/60 flex items-center justify-center mx-auto">
-                <span className="text-lg sm:text-2xl">💎</span>
-              </div>
-              <p className="text-xs sm:text-sm font-medium text-foreground">Neue Kollektionen</p>
-            </div>
+            ))}
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { FlowerOfLife } from "./SacredGeometry";
+import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-jewelry-1.jpg";
 
 export const HeroSection = () => {
@@ -17,42 +18,48 @@ export const HeroSection = () => {
           alt="Handgefertigter Pranatropfen Schmuck"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/60 to-foreground/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/50 to-foreground/80" />
       </div>
 
       {/* Sacred Geometry Background - subtle */}
-      <FlowerOfLife className="absolute bottom-[-200px] right-1/4 w-[400px] h-[400px] text-gold-100 opacity-[0.08]" />
+      <FlowerOfLife className="absolute bottom-[-200px] right-1/4 w-[400px] h-[400px] text-gold-200 opacity-[0.08]" />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center max-w-4xl">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 text-primary-foreground leading-tight animate-fade-in-up text-shadow-gold">
-          Trage deine <span className="font-extrabold">Energie</span>
-        </h1>
-        <p className="text-lg sm:text-xl md:text-2xl mb-3 sm:mb-4 text-primary-foreground/95 max-w-3xl mx-auto font-medium animate-fade-in-up text-shadow-gold" style={{ animationDelay: "200ms" }}>
-          Dein persönlicher <span className="font-bold">Energiebegleiter</span> – handgefertigt mit Intention
-        </p>
-        <p className="text-sm sm:text-base md:text-lg mb-8 sm:mb-10 text-primary-foreground/90 max-w-2xl mx-auto font-normal animate-fade-in-up" style={{ animationDelay: "400ms" }}>
-          Spüre die Verbindung. Jeder Pranatropfen trägt eine <span className="font-semibold">einzigartige Schwingung</span> aus natürlichen Edelsteinen und wird in achtsamer <span className="font-semibold">Handarbeit</span> für dich erschaffen.
-        </p>
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center lg:text-left max-w-6xl">
+        <div className="max-w-2xl mx-auto lg:mx-0">
+          <p className="subheadline mb-3 text-gold-300 animate-fade-in">
+            Handgefertigt mit Intention
+          </p>
+          
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 sm:mb-6 text-white leading-tight animate-fade-in-up text-shadow">
+            Trage deine <span className="text-gold-300">Energie</span>
+          </h1>
+          
+          <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-10 text-white/90 leading-relaxed animate-fade-in-up" style={{ animationDelay: "200ms" }}>
+            Jeder Pranatropfen trägt eine einzigartige Schwingung aus natürlichen Edelsteinen 
+            und wird in achtsamer Handarbeit für dich erschaffen.
+          </p>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: "600ms" }}>
-          <Button
-            variant="heroPrimary"
-            size="lg"
-            onClick={() => scrollToSection("story")}
-            className="w-full sm:w-auto"
-          >
-            Finde deine Energie
-          </Button>
-          <Button
-            variant="heroSecondary"
-            size="lg"
-            onClick={() => scrollToSection("handwerk")}
-            className="w-full sm:w-auto"
-          >
-            Wie sie entstehen
-          </Button>
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start items-center animate-fade-in" style={{ animationDelay: "400ms" }}>
+            <Button
+              variant="heroPrimary"
+              size="lg"
+              onClick={() => scrollToSection("story")}
+              className="w-full sm:w-auto"
+            >
+              Kollektion entdecken
+              <ArrowRight className="w-4 h-4" />
+            </Button>
+            <Button
+              variant="heroSecondary"
+              size="lg"
+              onClick={() => scrollToSection("handwerk")}
+              className="w-full sm:w-auto"
+            >
+              Wie sie entstehen
+            </Button>
+          </div>
         </div>
       </div>
     </section>

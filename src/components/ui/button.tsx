@@ -5,24 +5,23 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground shadow-[var(--shadow-soft)] hover:bg-primary/90 hover:shadow-[var(--shadow-medium)]",
-        destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
-        outline: "border border-primary/20 bg-background/80 backdrop-blur-sm hover:bg-accent hover:text-accent-foreground shadow-[var(--shadow-soft)]",
-        secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-primary text-primary-foreground px-8 py-6 text-base shadow-[var(--shadow-medium)] hover:shadow-[var(--shadow-glow)] hover:scale-105 transition-all duration-300",
-        heroPrimary: "bg-gradient-to-r from-gold-500 to-gold-600 text-primary-foreground hover:from-gold-600 hover:to-gold-700 shadow-glow hover:shadow-glow-strong font-semibold transition-all duration-300",
-        heroSecondary: "bg-transparent border-2 border-primary-foreground/80 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm font-semibold transition-all duration-300",
+        default: "bg-gold-500 text-white rounded-full hover:bg-gold-600 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)]",
+        destructive: "bg-destructive text-destructive-foreground rounded-full shadow-sm hover:bg-destructive/90",
+        outline: "border border-gold-300 text-gold-700 bg-transparent rounded-full hover:bg-gold-50 shadow-[var(--shadow-sm)]",
+        secondary: "bg-beige-100 text-beige-800 rounded-full shadow-sm hover:bg-beige-200",
+        ghost: "text-gold-600 hover:bg-gold-50 hover:text-gold-700 rounded-full",
+        link: "text-gold-600 underline-offset-4 hover:underline",
+        heroPrimary: "bg-gold-500 text-white rounded-full hover:bg-gold-600 shadow-glow hover:shadow-glow-strong font-semibold",
+        heroSecondary: "bg-transparent border-2 border-white/80 text-white rounded-full hover:bg-white/10 backdrop-blur-sm font-semibold",
       },
       size: {
         default: "h-10 px-6 py-2",
-        sm: "h-9 rounded-full px-4",
-        lg: "h-12 rounded-full px-8",
+        sm: "h-9 px-4 text-xs",
+        lg: "h-12 px-8 text-base",
         icon: "h-10 w-10",
       },
     },
