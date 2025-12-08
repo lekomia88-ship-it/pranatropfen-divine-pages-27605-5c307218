@@ -29,35 +29,34 @@ export const NewsletterSection = () => {
   };
 
   return (
-    <section className="py-12 sm:py-16 lg:py-24 bg-beige-50 relative overflow-hidden">
-      {/* Decorative element */}
-      <SunSymbol className="absolute top-[-70px] left-[-60px] w-[180px] h-[180px] text-gold-300 opacity-[0.08]" />
+    <section className="py-10 sm:py-14 lg:py-24 bg-beige-50 relative overflow-hidden">
+      {/* Decorative element - hidden on mobile */}
+      <SunSymbol className="hidden sm:block absolute top-[-70px] left-[-60px] w-[180px] h-[180px] text-gold-300 opacity-[0.08]" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-16 items-center">
           {/* Left: Content */}
           <div className="text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-100/60 border border-gold-200/50 text-gold-700 text-sm font-medium mb-6">
-              <Mail className="w-4 h-4" />
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gold-100/60 border border-gold-200/50 text-gold-700 text-xs sm:text-sm font-medium mb-4 sm:mb-6">
+              <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               <span>Newsletter</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-4 leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold text-foreground mb-3 sm:mb-4 leading-tight">
               Bleib mit uns{" "}
               <span className="text-gold-600">verbunden</span>
             </h2>
             
-            <div className="w-24 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto lg:mx-0 mb-6" />
+            <div className="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto lg:mx-0 mb-4 sm:mb-6" />
             
-            <p className="text-lg text-muted-foreground leading-relaxed mb-4 max-w-lg mx-auto lg:mx-0">
-              Erfahre als Erste/r von neuen Kreationen, erhalte Inspiration 
-              für deinen spirituellen Alltag und exklusive Einblicke hinter die Kulissen.
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-3 sm:mb-4 max-w-lg mx-auto lg:mx-0">
+              Erfahre als Erste/r von neuen Kreationen und erhalte Inspiration 
+              für deinen spirituellen Alltag.
             </p>
             
-            <p className="text-base text-muted-foreground leading-relaxed max-w-lg mx-auto lg:mx-0">
-              Wir teilen Vollmond-Rituale, Pflegetipps für deine Pranatropfen 
-              und Geschichten aus unserer Werkstatt.
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed max-w-lg mx-auto lg:mx-0 hidden sm:block">
+              Wir teilen Vollmond-Rituale, Pflegetipps und Geschichten aus unserer Werkstatt.
             </p>
           </div>
 

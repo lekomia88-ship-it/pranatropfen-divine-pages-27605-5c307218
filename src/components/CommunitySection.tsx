@@ -11,22 +11,22 @@ export const CommunitySection = () => {
     <section className="py-12 sm:py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
         {/* Header */}
-        <div className="text-center mb-8 sm:mb-10 lg:mb-12">
-          <p className="subheadline mb-3">Unsere Community</p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-4">
+        <div className="text-center mb-6 sm:mb-10 lg:mb-12">
+          <p className="subheadline mb-2 sm:mb-3 text-xs sm:text-sm">Unsere Community</p>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold text-foreground mb-3 sm:mb-4">
             Werde Teil der <span className="text-gold-600">Gemeinschaft</span>
           </h2>
-          <div className="w-24 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto" />
+          <div className="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto" />
         </div>
 
         {/* Two Column Layout */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           {/* Left: Image */}
-          <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gold-200/30">
+          <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-lg sm:shadow-xl border border-gold-200/30 w-full">
             <img
               src={communityBg}
               alt="OZ Orgonite Community – zufriedene Kunden"
-              className="w-full h-[300px] sm:h-[380px] lg:h-[420px] object-cover"
+              className="w-full h-[220px] sm:h-[320px] lg:h-[420px] object-cover"
             />
           </div>
 

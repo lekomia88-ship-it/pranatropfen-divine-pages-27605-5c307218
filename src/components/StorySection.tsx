@@ -18,32 +18,75 @@ const features: Feature[] = [
 
 export const StorySection = () => {
   return (
-    <section id="story" className="py-12 sm:py-16 lg:py-24 bg-background relative overflow-hidden">
-      {/* Decorative sun */}
-      <SunSymbol className="absolute bottom-[-100px] right-[-80px] w-[240px] h-[240px] text-gold-300 opacity-[0.08]" />
+    <section id="story" className="py-10 sm:py-14 lg:py-24 bg-background relative overflow-hidden">
+      {/* Decorative sun - hidden on mobile */}
+      <SunSymbol className="hidden sm:block absolute bottom-[-100px] right-[-80px] w-[240px] h-[240px] text-gold-300 opacity-[0.08]" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl">
-        {/* Two Column Layout */}
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
-          {/* Left: Images with staggered layout */}
-          <div className="relative">
-            <div className="grid grid-cols-12 gap-4">
+        {/* Mobile: Text first, then images. Desktop: Images left, text right */}
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+          
+          {/* Content - appears FIRST on mobile */}
+          <div className="order-1 lg:order-2 text-center lg:text-left">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gold-100/60 border border-gold-200/50 text-gold-700 text-xs sm:text-sm font-medium mb-4 sm:mb-6">
+              <SunSymbol className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+              <span>Unsere Vision</span>
+            </div>
+
+            {/* Headline */}
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold text-foreground leading-tight mb-3 sm:mb-4">
+              Energie in die{" "}
+              <span className="text-gold-600">Welt tragen</span>
+            </h2>
+
+            {/* Gold line */}
+            <div className="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto lg:mx-0 mb-4 sm:mb-6" />
+
+            {/* Description */}
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-3 sm:mb-4 max-w-lg mx-auto lg:mx-0">
+              Wir glauben daran, dass jeder Mensch Zugang zu positiver Energie verdient. 
+              Mit jedem Pranatropfen® möchten wir ein Stück dieser Kraft weitergeben.
+            </p>
+            
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-5 sm:mb-8 max-w-lg mx-auto lg:mx-0">
+              Unsere Vision: <span className="font-semibold text-foreground">Harmonie und Wohlbefinden</span> in 
+              den Alltag bringen.
+            </p>
+
+            {/* Feature Pills - horizontal scroll on mobile */}
+            <div className="flex gap-2 overflow-x-auto lg:overflow-visible lg:flex-wrap pb-2 lg:pb-0 -mx-4 px-4 lg:mx-0 lg:px-0 scrollbar-hide">
+              {features.map((feature, index) => (
+                <div 
+                  key={index}
+                  className="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-full bg-card border border-gold-200/50 text-foreground text-xs font-medium hover:bg-gold-50 transition-colors flex-shrink-0"
+                >
+                  <feature.icon className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-gold-500" />
+                  <span className="whitespace-nowrap">{feature.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Images - appears SECOND on mobile */}
+          <div className="order-2 lg:order-1 relative w-full max-w-sm sm:max-w-md mx-auto lg:mx-0 lg:max-w-none">
+            <div className="grid grid-cols-12 gap-3 sm:gap-4">
               {/* Main large image */}
               <div className="col-span-7 relative">
-                <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl border border-gold-200/30">
+                <div className="aspect-[3/4] rounded-xl sm:rounded-2xl overflow-hidden shadow-lg sm:shadow-xl border border-gold-200/30">
                   <img
                     src={modelImage}
                     alt="Model trägt Pranatropfen Schmuck"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                {/* Decorative corner accent */}
-                <div className="absolute -bottom-3 -right-3 w-24 h-24 border-2 border-gold-300/40 rounded-2xl -z-10" />
+                {/* Decorative corner accent - smaller on mobile */}
+                <div className="absolute -bottom-2 -right-2 sm:-bottom-3 sm:-right-3 w-16 sm:w-24 h-16 sm:h-24 border-2 border-gold-300/40 rounded-xl sm:rounded-2xl -z-10" />
               </div>
               
               {/* Smaller offset image */}
-              <div className="col-span-5 pt-16">
-                <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-lg border border-gold-200/30">
+              <div className="col-span-5 pt-8 sm:pt-12 lg:pt-16">
+                <div className="aspect-[3/4] rounded-xl sm:rounded-2xl overflow-hidden shadow-md sm:shadow-lg border border-gold-200/30">
                   <img
                     src={modelImage2}
                     alt="Model mit Pranatropfen Energie-Schmuck"
@@ -51,49 +94,6 @@ export const StorySection = () => {
                   />
                 </div>
               </div>
-            </div>
-          </div>
-
-          {/* Right: Content */}
-          <div className="text-center lg:text-left">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-100/60 border border-gold-200/50 text-gold-700 text-sm font-medium mb-6">
-              <SunSymbol className="w-4 h-4" />
-              <span>Unsere Vision</span>
-            </div>
-
-            {/* Headline */}
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground leading-tight mb-4">
-              Energie in die{" "}
-              <span className="text-gold-600">Welt tragen</span>
-            </h2>
-
-            {/* Gold line */}
-            <div className="w-24 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto lg:mx-0 mb-6" />
-
-            {/* Description */}
-            <p className="text-lg text-muted-foreground leading-relaxed mb-4 max-w-lg mx-auto lg:mx-0">
-              Wir glauben daran, dass jeder Mensch Zugang zu positiver Energie verdient. 
-              Mit jedem Pranatropfen® möchten wir ein Stück dieser Kraft weitergeben.
-            </p>
-            
-            <p className="text-base text-muted-foreground leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
-              Ob als täglicher Begleiter oder als Geschenk für einen besonderen Menschen – 
-              unsere Vision ist es, <span className="font-semibold text-foreground">Harmonie und Wohlbefinden</span> in 
-              den Alltag zu bringen.
-            </p>
-
-            {/* Feature Pills - horizontal scroll on mobile */}
-            <div className="flex lg:flex-wrap gap-2 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0 -mx-4 px-4 lg:mx-0 lg:px-0 scrollbar-hide justify-start lg:justify-start">
-              {features.map((feature, index) => (
-                <div 
-                  key={index}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 sm:py-2 rounded-full bg-card border border-gold-200/50 text-foreground text-xs sm:text-sm font-medium hover:bg-gold-50 transition-colors flex-shrink-0"
-                >
-                  <feature.icon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gold-500" />
-                  <span className="whitespace-nowrap">{feature.label}</span>
-                </div>
-              ))}
             </div>
           </div>
         </div>

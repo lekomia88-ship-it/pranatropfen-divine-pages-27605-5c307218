@@ -42,29 +42,29 @@ const faqs = [
 
 export const FAQSection = () => {
   return (
-    <section className="py-12 sm:py-16 lg:py-24 bg-beige-50 relative overflow-hidden">
-      {/* Background geometry */}
-      <SacredTriangles className="absolute bottom-[-120px] right-[-100px] w-[380px] h-[380px] text-gold-200 opacity-[0.05]" />
+    <section className="py-10 sm:py-14 lg:py-24 bg-beige-50 relative overflow-hidden">
+      {/* Background geometry - hidden on mobile */}
+      <SacredTriangles className="hidden sm:block absolute bottom-[-120px] right-[-100px] w-[380px] h-[380px] text-gold-200 opacity-[0.05]" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl">
-        <div className="grid lg:grid-cols-5 gap-8 lg:gap-16">
+        <div className="flex flex-col lg:grid lg:grid-cols-5 gap-6 lg:gap-16">
           {/* Left: Header */}
           <div className="lg:col-span-2 text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-100/60 border border-gold-200/50 text-gold-700 text-sm font-medium mb-6">
-              <HelpCircle className="w-4 h-4" />
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gold-100/60 border border-gold-200/50 text-gold-700 text-xs sm:text-sm font-medium mb-4 sm:mb-6">
+              <HelpCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               <span>Wissenswertes</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-4 leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold text-foreground mb-3 sm:mb-4 leading-tight">
               Häufige{" "}
               <span className="text-gold-600">Fragen</span>
             </h2>
             
-            <div className="w-24 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto lg:mx-0 mb-6" />
+            <div className="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto lg:mx-0 mb-4 sm:mb-6" />
             
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Alles über Herstellung, Materialien und Pflege deines Pranatropfens.
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6 lg:mb-8">
+              Alles über Herstellung, Materialien und Pflege.
             </p>
 
             {/* Contact CTA */}
