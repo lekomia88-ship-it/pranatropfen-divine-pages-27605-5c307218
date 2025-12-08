@@ -1,32 +1,30 @@
-import { useState } from "react";
+import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useToast } from "@/hooks/use-toast";
 import { SunSymbol } from "./CelestialSymbols";
 import { Mail, ArrowRight } from "lucide-react";
 
+declare global {
+  interface Window {
+    grecaptcha: any;
+  }
+}
+
 export const NewsletterSection = () => {
-  const [email, setEmail] = useState("");
-  const { toast } = useToast();
+  const recaptchaRef = useRef<HTMLDivElement>(null);
+  const scriptLoaded = useRef(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!email) {
-      toast({
-        title: "Bitte gib deine E-Mail an",
-        variant: "destructive",
-      });
-      return;
+  useEffect(() => {
+    // Load reCAPTCHA script only once
+    if (!scriptLoaded.current && !document.querySelector('script[src*="recaptcha"]')) {
+      const script = document.createElement('script');
+      script.src = 'https://www.google.com/recaptcha/api.js';
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
+      scriptLoaded.current = true;
     }
-
-    toast({
-      title: "Willkommen in der Community!",
-      description: "Du erhältst bald Post von uns.",
-    });
-    
-    setEmail("");
-  };
+  }, []);
 
   return (
     <section className="py-10 sm:py-14 lg:py-24 bg-beige-50 relative overflow-hidden">
@@ -60,7 +58,7 @@ export const NewsletterSection = () => {
             </p>
           </div>
 
-          {/* Right: Form */}
+          {/* Right: Form - CleverReach Integration */}
           <div className="bg-card rounded-2xl border border-gold-100/80 p-6 sm:p-8 shadow-sm">
             <h3 className="text-xl font-semibold text-foreground mb-2 text-center">
               Jetzt anmelden
@@ -69,23 +67,51 @@ export const NewsletterSection = () => {
               Kein Spam. Nur gute Energie.
             </p>
             
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <Input
-                type="email"
-                placeholder="Deine E-Mail Adresse"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="h-12 px-5 rounded-full border-gold-200 bg-background focus:border-gold-400 focus:ring-gold-400"
-              />
-              <Button
-                type="submit"
-                variant="default"
-                size="lg"
-                className="w-full"
-              >
-                Anmelden
-                <ArrowRight className="w-4 h-4" />
-              </Button>
+            {/* CleverReach Form */}
+            <form 
+              className="layout_form cr_form cr_font space-y-4" 
+              action="https://mailings.oz-orgonite.de/f/418339-407805/wcs/" 
+              method="post" 
+              target="_blank"
+            >
+              <div className="cr_body cr_page cr_font">
+                <div className="editable_content space-y-4">
+                  {/* Email Input */}
+                  <div className="cr_form-component cr_form-component--email cr_ipe_item musthave">
+                    <Input
+                      type="email"
+                      name="email"
+                      placeholder="Deine E-Mail Adresse"
+                      required
+                      className="h-12 px-5 rounded-full border-gold-200 bg-background focus:border-gold-400 focus:ring-gold-400 cr_form-input"
+                    />
+                  </div>
+                  
+                  {/* reCAPTCHA */}
+                  <div className="cr_ipe_item musthave flex justify-center">
+                    <div 
+                      ref={recaptchaRef}
+                      className="g-recaptcha" 
+                      data-theme="light" 
+                      data-size="normal" 
+                      data-sitekey="6Lfhcd0SAAAAAOBEHmAVEHJeRnrH8T7wPvvNzEPD"
+                    />
+                  </div>
+                  
+                  {/* Submit Button */}
+                  <div className="cr_form-component cr_form-component--submit submit_container">
+                    <Button
+                      type="submit"
+                      variant="default"
+                      size="lg"
+                      className="w-full cr_form-block cr_button"
+                    >
+                      Anmelden
+                      <ArrowRight className="w-4 h-4" />
+                    </Button>
+                  </div>
+                </div>
+              </div>
             </form>
             
             <p className="text-xs text-muted-foreground mt-4 text-center">
