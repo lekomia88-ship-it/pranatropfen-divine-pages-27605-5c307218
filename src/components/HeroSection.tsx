@@ -13,13 +13,13 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-[60vh] sm:min-h-[70vh] lg:min-h-[80vh] flex items-center overflow-hidden bg-gradient-to-br from-beige-50 via-background to-beige-100/50 pt-8 pb-12 sm:py-0">
-      <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+    <section className="relative min-h-[60vh] sm:min-h-[65vh] md:min-h-[70vh] lg:min-h-[80vh] flex items-center overflow-hidden bg-gradient-to-br from-beige-50 via-background to-beige-100/50 pt-8 pb-12 sm:py-0">
+      <div className="container mx-auto px-5 sm:px-6 max-w-6xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 lg:gap-12 items-center">
           
           {/* Bild - auf Mobile kleiner und zentriert */}
           <div className="relative order-1 lg:order-1 animate-fade-in">
-            <div className="relative aspect-[4/5] max-w-[280px] sm:max-w-sm lg:max-w-md mx-auto lg:mx-0">
+            <div className="relative aspect-[4/5] max-w-[240px] sm:max-w-[280px] md:max-w-sm lg:max-w-md mx-auto lg:mx-0">
               <img
                 src={heroImage}
                 alt="Pranatropfen Schmuck in eleganter Geschenkbox"
@@ -50,13 +50,13 @@ export const HeroSection = () => {
             </p>
 
             {/* Social Proof */}
-            <div className="flex items-center justify-center lg:justify-start gap-4 mb-6 sm:mb-8 animate-fade-in" style={{ animationDelay: "300ms" }}>
-              <div className="flex items-center gap-1">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2 sm:gap-4 mb-6 sm:mb-8 animate-fade-in" style={{ animationDelay: "300ms" }}>
+              <div className="flex items-center gap-0.5">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-gold-500 text-gold-500" />
                 ))}
               </div>
-              <span className="text-sm text-muted-foreground">
+              <span className="text-sm text-muted-foreground text-center">
                 <span className="font-semibold text-foreground">4,8/5</span> aus über 1.300 Bewertungen
               </span>
             </div>

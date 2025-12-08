@@ -19,34 +19,34 @@ export const CommunitySection = () => {
           <div className="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto" />
         </div>
 
-        {/* Two Column Layout */}
-        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+        {/* Two Column Layout - grid starts at md */}
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-10 lg:gap-12 items-center">
           {/* Left: Image */}
           <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-lg sm:shadow-xl border border-gold-200/30 w-full">
             <img
               src={communityBg}
               alt="OZ Orgonite Community – zufriedene Kunden"
-              className="w-full h-[220px] sm:h-[320px] lg:h-[420px] object-cover"
+              className="w-full h-[220px] sm:h-[280px] md:h-[320px] lg:h-[420px] object-cover"
             />
           </div>
 
           {/* Right: Text Content */}
-          <div className="text-center lg:text-left">
+          <div className="text-center md:text-left">
             <p className="text-2xl sm:text-3xl font-semibold text-foreground mb-4">
               Über <span className="text-gold-600">20.000</span> begeisterte Kunden
             </p>
             
-            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-4 max-w-lg mx-auto lg:mx-0">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-4 max-w-lg mx-auto md:mx-0">
               Lass dich inspirieren, teile deine Erfahrungen und verbinde dich mit Gleichgesinnten.
             </p>
             
-            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-6 sm:mb-8 max-w-lg mx-auto lg:mx-0">
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-6 sm:mb-8 max-w-lg mx-auto md:mx-0">
               Finde deinen persönlichen Pranatropfen® und überzeuge dich selbst 
               von der Schönheit dieser einzigartigen Energie-Kunst.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-6">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start mb-6">
               <Button
                 variant="default"
                 size="lg"

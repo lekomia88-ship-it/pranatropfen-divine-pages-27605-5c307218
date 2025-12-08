@@ -47,9 +47,9 @@ export const FAQSection = () => {
       <SacredTriangles className="hidden sm:block absolute bottom-[-120px] right-[-100px] w-[380px] h-[380px] text-gold-200 opacity-[0.05]" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl">
-        <div className="flex flex-col lg:grid lg:grid-cols-5 gap-6 lg:gap-16">
+        <div className="flex flex-col md:grid md:grid-cols-5 gap-6 md:gap-10 lg:gap-16">
           {/* Left: Header */}
-          <div className="lg:col-span-2 text-center lg:text-left">
+          <div className="md:col-span-2 text-center md:text-left">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gold-100/60 border border-gold-200/50 text-gold-700 text-xs sm:text-sm font-medium mb-4 sm:mb-6">
               <HelpCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
@@ -61,14 +61,14 @@ export const FAQSection = () => {
               <span className="text-gold-600">Fragen</span>
             </h2>
             
-            <div className="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto lg:mx-0 mb-4 sm:mb-6" />
+            <div className="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto md:mx-0 mb-4 sm:mb-6" />
             
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6 lg:mb-8">
               Alles über Herstellung, Materialien und Pflege.
             </p>
 
             {/* Contact CTA */}
-            <div className="hidden lg:block">
+            <div className="hidden md:block">
               <p className="text-muted-foreground text-sm mb-3">
                 Noch Fragen?
               </p>
@@ -85,7 +85,7 @@ export const FAQSection = () => {
           </div>
 
           {/* Right: FAQ Accordion */}
-          <div className="lg:col-span-3">
+          <div className="md:col-span-3">
             <Accordion type="single" collapsible className="space-y-3">
               {faqs.map((faq, index) => (
                 <AccordionItem
@@ -104,7 +104,7 @@ export const FAQSection = () => {
             </Accordion>
 
             {/* Mobile Contact CTA */}
-            <div className="lg:hidden text-center mt-8">
+            <div className="md:hidden text-center mt-8">
               <a
                 href="https://www.oz-orgonite.de/kontakt"
                 target="_blank"
