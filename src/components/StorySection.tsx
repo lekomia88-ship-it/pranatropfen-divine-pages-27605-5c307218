@@ -83,15 +83,15 @@ export const StorySection = () => {
               den Alltag zu bringen.
             </p>
 
-            {/* Feature Pills */}
-            <div className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3">
+            {/* Feature Pills - horizontal scroll on mobile */}
+            <div className="flex lg:flex-wrap gap-2 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0 -mx-4 px-4 lg:mx-0 lg:px-0 scrollbar-hide justify-start lg:justify-start">
               {features.map((feature, index) => (
                 <div 
                   key={index}
-                  className="inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-card border border-gold-200/50 text-foreground text-sm font-medium hover:bg-gold-50 transition-colors"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 sm:py-2 rounded-full bg-card border border-gold-200/50 text-foreground text-xs sm:text-sm font-medium hover:bg-gold-50 transition-colors flex-shrink-0"
                 >
-                  <feature.icon className="w-4 h-4 text-gold-500" />
-                  {feature.label}
+                  <feature.icon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gold-500" />
+                  <span className="whitespace-nowrap">{feature.label}</span>
                 </div>
               ))}
             </div>

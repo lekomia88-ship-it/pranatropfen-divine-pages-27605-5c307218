@@ -108,38 +108,38 @@ export const HandwerkSection = () => {
         </div>
 
         {/* Das fertige Meisterwerk */}
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          <div className="relative">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+          <div className="relative max-w-sm sm:max-w-md mx-auto lg:mx-0 lg:max-w-none">
             <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gold-200/30">
               <img
                 src={pranatropfenHandReal}
                 alt="Fertiger Pranatropfen-Anhänger in der Hand"
-                className="w-full h-[400px] sm:h-[500px] object-cover"
+                className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
               />
             </div>
-            {/* Decorative corner accent */}
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 border-2 border-gold-300/40 rounded-2xl -z-10" />
+            {/* Decorative corner accent - smaller on mobile */}
+            <div className="absolute -bottom-2 -right-2 sm:-bottom-4 sm:-right-4 w-20 sm:w-32 h-20 sm:h-32 border-2 border-gold-300/40 rounded-2xl -z-10" />
           </div>
 
           <div className="text-center lg:text-left">
-            <h3 className="text-2xl sm:text-3xl font-semibold text-foreground mb-4">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-foreground mb-3 sm:mb-4">
               Das fertige <span className="text-gold-600">Meisterwerk</span>
             </h3>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6 sm:mb-8 max-w-lg mx-auto lg:mx-0">
               Nach mehreren Tagen Aushärtung, präzisem Schleifen und liebevoller Politur entsteht 
               ein Unikat, das Licht einfängt und Energie ausstrahlt.
             </p>
             
             {/* Highlights with symbols */}
-            <div className="space-y-5">
+            <div className="space-y-4 sm:space-y-5">
               {highlights.map((item, index) => (
-                <div key={index} className="flex items-start gap-4 justify-center lg:justify-start">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gold-100/60 border border-gold-200/50 flex items-center justify-center">
-                    <span className="text-xl text-gold-600">{item.icon}</span>
+                <div key={index} className="flex items-start gap-3 sm:gap-4 justify-center lg:justify-start">
+                  <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-100/60 border border-gold-200/50 flex items-center justify-center">
+                    <span className="text-lg sm:text-xl text-gold-600">{item.icon}</span>
                   </div>
                   <div className="text-left">
-                    <h4 className="font-semibold text-foreground text-base mb-0.5">{item.title}</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                    <h4 className="font-semibold text-foreground text-sm sm:text-base mb-0.5">{item.title}</h4>
+                    <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{item.description}</p>
                   </div>
                 </div>
               ))}
