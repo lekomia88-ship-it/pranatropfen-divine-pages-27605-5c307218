@@ -128,15 +128,15 @@ export const HandwerkSection = () => {
             </p>
             
             {/* Highlights with symbols */}
-            <div className="space-y-3 sm:space-y-4">
+            <div className="space-y-4">
               {highlights.map((item, index) => (
-                <div key={index} className="flex items-start gap-3 justify-center lg:justify-start">
-                  <div className="flex-shrink-0 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-gold-100/60 border border-gold-200/50 flex items-center justify-center">
-                    <span className="text-base sm:text-lg text-gold-600">{item.icon}</span>
+                <div key={index} className="flex items-center gap-3 sm:gap-4 justify-center lg:justify-start">
+                  <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-100/60 border border-gold-200/50 flex items-center justify-center">
+                    <span className="text-lg sm:text-xl text-gold-600">{item.icon}</span>
                   </div>
-                  <div className="text-left">
-                    <h4 className="font-semibold text-foreground text-sm sm:text-base">{item.title}</h4>
-                    <p className="text-xs sm:text-sm text-muted-foreground">{item.description}</p>
+                  <div className="text-left flex-1">
+                    <h4 className="font-semibold text-foreground text-sm sm:text-base leading-tight">{item.title}</h4>
+                    <p className="text-xs sm:text-sm text-muted-foreground leading-tight">{item.description}</p>
                   </div>
                 </div>
               ))}
