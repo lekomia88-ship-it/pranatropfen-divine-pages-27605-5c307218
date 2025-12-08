@@ -1,14 +1,22 @@
 import { FlowerOfLife } from "./SacredGeometry";
+import { Sparkles, Heart, Gem, Fingerprint } from "lucide-react";
+import { LucideIcon } from "lucide-react";
 import workshopResinPouring from "@/assets/workshop-resin-pouring.jpg";
 import pranatropfenHandReal from "@/assets/pranatropfen-hand-real.jpg";
 import workshopSmallGemstones from "@/assets/workshop-small-gemstones.jpg";
 import workshopBlackWhiteTurquoise from "@/assets/workshop-black-white-turquoise.jpg";
 import workshopEnergyWorkspace from "@/assets/workshop-energy-workspace.jpg";
 
-const highlights = [
-  { icon: "✦", title: "Handpoliert", description: "Jede Oberfläche wird von Hand bearbeitet" },
-  { icon: "◈", title: "Energetisch aktiviert", description: "Mit positiver Intention geladen" },
-  { icon: "☽", title: "Einzigartig", description: "Keine zwei Pranatropfen sind gleich" },
+interface Highlight {
+  icon: LucideIcon;
+  label: string;
+}
+
+const highlights: Highlight[] = [
+  { icon: Gem, label: "Handpoliert" },
+  { icon: Sparkles, label: "Energetisch aktiviert" },
+  { icon: Fingerprint, label: "Einzigartig" },
+  { icon: Heart, label: "Mit Liebe gefertigt" },
 ];
 
 export const HandwerkSection = () => {
@@ -127,17 +135,15 @@ export const HandwerkSection = () => {
               ein Unikat, das Licht einfängt und Energie ausstrahlt.
             </p>
             
-            {/* Highlights with symbols */}
-            <div className="space-y-4">
+            {/* Highlights as pills */}
+            <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-2 sm:justify-center lg:justify-start">
               {highlights.map((item, index) => (
-                <div key={index} className="flex items-center gap-3 sm:gap-4 justify-center lg:justify-start">
-                  <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-100/60 border border-gold-200/50 flex items-center justify-center">
-                    <span className="text-lg sm:text-xl text-gold-600">{item.icon}</span>
-                  </div>
-                  <div className="text-left flex-1">
-                    <h4 className="font-semibold text-foreground text-sm sm:text-base leading-tight">{item.title}</h4>
-                    <p className="text-xs sm:text-sm text-muted-foreground leading-tight">{item.description}</p>
-                  </div>
+                <div 
+                  key={index}
+                  className="flex items-center justify-center sm:justify-start gap-1.5 px-3 py-2 rounded-full bg-card border border-gold-200/50 text-foreground text-xs font-medium hover:bg-gold-50 transition-colors"
+                >
+                  <item.icon className="w-3.5 h-3.5 text-gold-500 flex-shrink-0" />
+                  <span className="whitespace-nowrap">{item.label}</span>
                 </div>
               ))}
             </div>
