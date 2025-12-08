@@ -13,9 +13,9 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-[60vh] sm:min-h-[65vh] md:min-h-[70vh] lg:min-h-[80vh] flex items-center overflow-hidden bg-gradient-to-br from-beige-50 via-background to-beige-100/50 pt-8 pb-12 sm:py-0">
+    <section className="relative min-h-[auto] md:min-h-[60vh] lg:min-h-[80vh] flex items-center overflow-hidden bg-gradient-to-br from-beige-50 via-background to-beige-100/50 py-10 sm:py-12 md:py-16 lg:py-0">
       <div className="container mx-auto px-5 sm:px-6 max-w-6xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-12 items-center">
           
           {/* Bild - auf Mobile kleiner und zentriert */}
           <div className="relative order-1 lg:order-1 animate-fade-in">

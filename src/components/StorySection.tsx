@@ -18,16 +18,16 @@ const features: Feature[] = [
 
 export const StorySection = () => {
   return (
-    <section id="story" className="py-12 sm:py-16 lg:py-24 bg-background relative overflow-hidden">
-      {/* Decorative sun - hidden on mobile */}
+    <section id="story" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-background relative overflow-hidden">
+      {/* Decorative sun - hidden on mobile/tablet */}
       <SunSymbol className="hidden lg:block absolute bottom-[-100px] right-[-80px] w-[240px] h-[240px] text-gold-300 opacity-[0.08]" />
 
       <div className="container mx-auto px-5 sm:px-6 relative z-10 max-w-6xl">
-        {/* Mobile: Stacked. Tablet/Desktop: Side by side */}
-        <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-10 lg:gap-16 items-center">
+        {/* Mobile/Tablet: Stacked. Desktop: Side by side */}
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           
-          {/* Content - appears FIRST on mobile */}
-          <div className="order-1 md:order-2 text-center md:text-left w-full">
+          {/* Content - appears FIRST on mobile/tablet */}
+          <div className="order-1 lg:order-2 text-center lg:text-left w-full max-w-xl mx-auto lg:max-w-none">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-100/60 border border-gold-200/50 text-gold-700 text-sm font-medium mb-5 sm:mb-6">
               <SunSymbol className="w-4 h-4" />
@@ -41,7 +41,7 @@ export const StorySection = () => {
             </h2>
 
             {/* Gold line */}
-            <div className="w-20 sm:w-24 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto md:mx-0 mb-5 sm:mb-6" />
+            <div className="w-20 sm:w-24 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto lg:mx-0 mb-5 sm:mb-6" />
 
             {/* Description */}
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-4">
@@ -54,8 +54,8 @@ export const StorySection = () => {
               den Alltag bringen.
             </p>
 
-            {/* Feature Pills - Grid on mobile, flex wrap on tablet/desktop */}
-            <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-2 sm:justify-center md:justify-start">
+            {/* Feature Pills */}
+            <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-2 sm:justify-center lg:justify-start">
               {features.map((feature, index) => (
                 <div 
                   key={index}
@@ -68,8 +68,8 @@ export const StorySection = () => {
             </div>
           </div>
 
-          {/* Images - appears SECOND on mobile */}
-          <div className="order-2 md:order-1 relative w-full max-w-[280px] sm:max-w-sm md:max-w-full mx-auto md:mx-0">
+          {/* Images - appears SECOND on mobile/tablet */}
+          <div className="order-2 lg:order-1 relative w-full max-w-[320px] sm:max-w-sm md:max-w-md lg:max-w-full mx-auto lg:mx-0">
             <div className="grid grid-cols-12 gap-3 sm:gap-4">
               {/* Main large image */}
               <div className="col-span-7 relative">
