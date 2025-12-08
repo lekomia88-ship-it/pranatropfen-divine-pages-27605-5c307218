@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Instagram, ArrowRight } from "lucide-react";
+import { Instagram } from "lucide-react";
 import communityBg from "@/assets/community-bg.jpg";
 
 const features = [
@@ -11,83 +11,78 @@ const features = [
 
 export const CommunitySection = () => {
   return (
-    <section className="relative py-20 lg:py-28 overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={communityBg}
-          alt="OZ Orgonite Community"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground/75 via-foreground/60 to-foreground/80" />
-      </div>
-
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 max-w-6xl">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left: Text Content */}
-          <div className="text-center lg:text-left">
-            <p className="subheadline mb-3 text-gold-300">Unsere Community</p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-4 leading-tight text-shadow">
-              Werde Teil der{" "}
-              <span className="text-gold-400">Gemeinschaft</span>
+    <section className="bg-background">
+      {/* Main Community Content */}
+      <div className="py-16 lg:py-24">
+        <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
+          {/* Header */}
+          <div className="text-center mb-10 lg:mb-12">
+            <p className="subheadline mb-3">Unsere Community</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-4">
+              Werde Teil der <span className="text-gold-600">Gemeinschaft</span>
             </h2>
-            <div className="w-24 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto lg:mx-0 mb-6" />
-            
-            <p className="text-lg text-white/90 mb-4 leading-relaxed max-w-lg mx-auto lg:mx-0">
-              Über <span className="font-semibold text-gold-300">20.000 begeisterte Kunden</span> tragen bereits ihre Energie.
-            </p>
-            <p className="text-base text-white/80 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0">
-              Lass dich inspirieren, teile deine Erfahrungen und verbinde dich mit Gleichgesinnten. 
-              Finde deinen persönlichen Pranatropfen® und überzeuge dich selbst.
-            </p>
-
-            {/* Instagram CTA */}
-            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start items-center mb-4">
-              <Button
-                variant="default"
-                size="lg"
-                className="w-full sm:w-auto"
-                onClick={() => {
-                  const productSection = document.querySelector('#products');
-                  if (productSection) {
-                    productSection.scrollIntoView({ behavior: 'smooth' });
-                  } else {
-                    window.location.href = 'https://www.oz-orgonite.de/schmuck/pranatropfen/';
-                  }
-                }}
-              >
-                Pranatropfen® entdecken
-                <ArrowRight className="w-4 h-4" />
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="w-full sm:w-auto border-white/30 text-white hover:bg-white/10"
-                asChild
-              >
-                <a 
-                  href="https://www.instagram.com/orgonites_of_oz/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2"
-                >
-                  <Instagram className="w-4 h-4" />
-                  @orgonites_of_oz
-                </a>
-              </Button>
-            </div>
+            <div className="w-24 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto" />
           </div>
 
-          {/* Right: Feature List */}
-          <div className="grid grid-cols-2 gap-4">
+          {/* Two Column Layout */}
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Left: Image */}
+            <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gold-200/30">
+              <img
+                src={communityBg}
+                alt="OZ Orgonite Community – zufriedene Kunden"
+                className="w-full h-[350px] sm:h-[420px] object-cover"
+              />
+            </div>
+
+            {/* Right: Text Content */}
+            <div className="text-center lg:text-left">
+              <p className="text-2xl sm:text-3xl font-semibold text-foreground mb-4">
+                Über <span className="text-gold-600">20.000</span> begeisterte Kunden
+              </p>
+              
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                Lass dich inspirieren, teile deine Erfahrungen und verbinde dich mit Gleichgesinnten.
+              </p>
+              
+              <p className="text-base text-muted-foreground leading-relaxed mb-8">
+                Finde deinen persönlichen Pranatropfen® und überzeuge dich selbst 
+                von der Schönheit dieser einzigartigen Energie-Kunst.
+              </p>
+
+              {/* Instagram CTA */}
+              <div className="space-y-4">
+                <p className="text-gold-600 font-semibold">@orgonites_of_oz</p>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-gold-300 text-gold-700 hover:bg-gold-50"
+                  asChild
+                >
+                  <a 
+                    href="https://www.instagram.com/orgonites_of_oz/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2"
+                  >
+                    <Instagram className="w-5 h-5" />
+                    Folge uns auf Instagram
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Features Banner */}
+      <div className="bg-beige-100 border-y border-gold-100/50 py-8 overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {features.map((feature, index) => (
-              <div 
-                key={index}
-                className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-5 text-center hover:bg-white/15 transition-colors"
-              >
-                <p className="font-semibold text-white text-sm mb-1">{feature.label}</p>
-                <p className="text-white/70 text-xs">{feature.description}</p>
+              <div key={index} className="text-center">
+                <p className="font-semibold text-foreground text-sm mb-1">{feature.label}</p>
+                <p className="text-muted-foreground text-xs">{feature.description}</p>
               </div>
             ))}
           </div>
