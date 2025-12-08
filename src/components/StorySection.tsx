@@ -18,13 +18,13 @@ const features: Feature[] = [
 
 export const StorySection = () => {
   return (
-    <section id="story" className="py-16 lg:py-24 bg-background relative overflow-hidden">
+    <section id="story" className="py-12 sm:py-16 lg:py-24 bg-background relative overflow-hidden">
       {/* Decorative sun */}
       <SunSymbol className="absolute bottom-[-100px] right-[-80px] w-[240px] h-[240px] text-gold-300 opacity-[0.08]" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl">
         {/* Two Column Layout */}
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           {/* Left: Images with staggered layout */}
           <div className="relative">
             <div className="grid grid-cols-12 gap-4">

@@ -42,12 +42,12 @@ const faqs = [
 
 export const FAQSection = () => {
   return (
-    <section className="py-16 lg:py-24 bg-beige-50 relative overflow-hidden">
+    <section className="py-12 sm:py-16 lg:py-24 bg-beige-50 relative overflow-hidden">
       {/* Background geometry */}
       <SacredTriangles className="absolute bottom-[-120px] right-[-100px] w-[380px] h-[380px] text-gold-200 opacity-[0.05]" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl">
-        <div className="grid lg:grid-cols-5 gap-10 lg:gap-16">
+        <div className="grid lg:grid-cols-5 gap-8 lg:gap-16">
           {/* Left: Header */}
           <div className="lg:col-span-2 text-center lg:text-left">
             {/* Badge */}
