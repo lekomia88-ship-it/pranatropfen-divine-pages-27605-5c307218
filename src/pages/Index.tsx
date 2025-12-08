@@ -6,7 +6,6 @@ import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { FAQSection } from "@/components/FAQSection";
 import { NewsletterSection } from "@/components/NewsletterSection";
 import { CommunitySection } from "@/components/CommunitySection";
-import { ScrollToProductsButton } from "@/components/ScrollToProductsButton";
 
 const Index = () => {
   return (
@@ -58,11 +57,6 @@ const Index = () => {
         <section id="pranatropfen-usps-footer" data-section="usps-footer">
           <FeatureBanner />
         </section>
-      </div>
-
-      {/* Sticky CTA - Optional, kann in Shopware separat eingebunden werden */}
-      <div id="chunk-sticky-cta" data-chunk="sticky-cta">
-        <ScrollToProductsButton />
       </div>
     </main>
   );

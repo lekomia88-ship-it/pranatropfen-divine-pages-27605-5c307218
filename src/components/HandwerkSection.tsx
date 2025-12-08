@@ -56,8 +56,8 @@ export const HandwerkSection = () => {
           </div>
         </div>
 
-        {/* Process Grid - 2 columns always */}
-        <div className="grid grid-cols-2 gap-3 sm:gap-6 mb-4 sm:mb-6">
+        {/* Process Grid - 2 columns on mobile/tablet, optimized gaps */}
+        <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 mb-4 sm:mb-6">
           {/* Die Auswahl */}
           <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-md sm:shadow-lg border border-gold-200/30 group">
             <img
@@ -111,9 +111,9 @@ export const HandwerkSection = () => {
         </div>
 
         {/* Das fertige Meisterwerk */}
-        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-16 items-center">
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-10 lg:gap-16 items-center">
           {/* Image */}
-          <div className="relative w-full max-w-xs sm:max-w-sm mx-auto lg:mx-0 lg:max-w-none">
+          <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-none mx-auto md:mx-0">
             <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-lg sm:shadow-xl border border-gold-200/30">
               <img
                 src={pranatropfenHandReal}
@@ -126,17 +126,17 @@ export const HandwerkSection = () => {
           </div>
 
           {/* Content */}
-          <div className="text-center lg:text-left">
+          <div className="text-center md:text-left">
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-foreground mb-3 sm:mb-4">
               Das fertige <span className="text-gold-600">Meisterwerk</span>
             </h3>
-            <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed mb-5 sm:mb-8 max-w-lg mx-auto lg:mx-0">
+            <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed mb-5 sm:mb-8 max-w-lg mx-auto md:mx-0">
               Nach mehreren Tagen Aushärtung, präzisem Schleifen und liebevoller Politur entsteht 
               ein Unikat, das Licht einfängt und Energie ausstrahlt.
             </p>
             
             {/* Highlights as pills */}
-            <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-2 sm:justify-center lg:justify-start">
+            <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-2 sm:justify-center md:justify-start">
               {highlights.map((item, index) => (
                 <div 
                   key={index}

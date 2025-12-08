@@ -52,8 +52,8 @@ export const TestimonialsSection = () => {
           </p>
         </div>
 
-        {/* Testimonials Grid - equal height cards */}
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+        {/* Testimonials Grid - 1 col mobile, 2 col tablet, 3 col desktop */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 items-stretch">
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}

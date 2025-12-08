@@ -8,9 +8,9 @@ interface Feature {
 }
 
 const features: Feature[] = [
-  { icon: Heart, label: "Handmade with Love", description: "Jedes Stück ein Unikat" },
-  { icon: Gem, label: "Echte Edelsteine", description: "Sorgfältig ausgewählt" },
-  { icon: Sparkles, label: "Energetisch aktiviert", description: "Mit Intention geladen" },
+  { icon: Heart, label: "Handmade", description: "Jedes Stück ein Unikat" },
+  { icon: Gem, label: "Edelsteine", description: "Sorgfältig ausgewählt" },
+  { icon: Sparkles, label: "Aktiviert", description: "Energetisch geladen" },
   { icon: Truck, label: "Gratis ab 70€", description: "Schneller Versand" },
 ];
 
