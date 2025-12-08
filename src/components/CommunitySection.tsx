@@ -8,8 +8,8 @@ export const CommunitySection = () => {
   };
 
   return (
-    <section className="py-12 sm:py-16 lg:py-24 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
+    <section className="py-12 sm:py-16 lg:py-24 bg-background overflow-hidden">
+      <div className="container mx-auto px-5 sm:px-6 max-w-6xl">
         {/* Header */}
         <div className="text-center mb-6 sm:mb-10 lg:mb-12">
           <p className="subheadline mb-2 sm:mb-3 text-xs sm:text-sm">Unsere Community</p>

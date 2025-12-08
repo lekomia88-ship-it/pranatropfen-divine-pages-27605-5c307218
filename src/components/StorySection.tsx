@@ -69,7 +69,7 @@ export const StorySection = () => {
           </div>
 
           {/* Images - appears SECOND on mobile */}
-          <div className="order-2 md:order-1 relative w-full max-w-xs sm:max-w-sm md:max-w-none mx-auto md:mx-0">
+          <div className="order-2 md:order-1 relative w-full max-w-[280px] sm:max-w-sm md:max-w-full mx-auto md:mx-0">
             <div className="grid grid-cols-12 gap-3 sm:gap-4">
               {/* Main large image */}
               <div className="col-span-7 relative">
@@ -80,8 +80,8 @@ export const StorySection = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                {/* Decorative corner accent - hidden on small mobile */}
-                <div className="hidden sm:block absolute -bottom-3 -right-3 w-24 h-24 border-2 border-gold-300/40 rounded-2xl -z-10" />
+                {/* Decorative corner accent - hidden on tablet and below */}
+                <div className="hidden lg:block absolute -bottom-3 -right-3 w-24 h-24 border-2 border-gold-300/40 rounded-2xl -z-10" />
               </div>
               
               {/* Smaller offset image */}

@@ -9,7 +9,7 @@ import { CommunitySection } from "@/components/CommunitySection";
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen overflow-x-hidden">
       {/* ========== CHUNK: ABOVE-LISTING ========== */}
       {/* Diese Sektionen kommen ÜBER das Shopware Produkt-Listing */}
       
