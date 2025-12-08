@@ -35,21 +35,20 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <section className="py-12 sm:py-16 lg:py-24 bg-background relative overflow-hidden">
-      {/* Subtle moon */}
-      <MoonSymbol className="absolute top-[-80px] right-[-70px] w-[200px] h-[200px] text-gold-300 opacity-[0.06]" />
+    <section className="py-10 sm:py-14 lg:py-24 bg-background relative overflow-hidden">
+      {/* Subtle moon - hidden on mobile */}
+      <MoonSymbol className="hidden sm:block absolute top-[-80px] right-[-70px] w-[200px] h-[200px] text-gold-300 opacity-[0.06]" />
       
       <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 lg:mb-16">
-          <p className="subheadline mb-3">Kundenstimmen</p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-10 lg:mb-16">
+          <p className="subheadline mb-2 sm:mb-3 text-xs sm:text-sm">Kundenstimmen</p>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold text-foreground mb-3 sm:mb-4">
             Das sagen unsere <span className="text-gold-600">Kunden</span>
           </h2>
-          <div className="w-24 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto mb-6" />
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Vielen Dank für euer wunderbares Feedback! Eure Erfahrungen helfen uns, 
-            noch besser zu werden und inspirieren andere auf ihrem Weg.
+          <div className="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto mb-4 sm:mb-6" />
+          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+            Vielen Dank für euer wunderbares Feedback!
           </p>
         </div>
 
