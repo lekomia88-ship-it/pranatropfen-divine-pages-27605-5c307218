@@ -1,8 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles, Star } from "lucide-react";
 import heroImage from "@/assets/hero-jewelry-1.jpg";
 
 export const HeroSection = () => {
+  const goToShop = () => {
+    window.location.href = "https://www.oz-orgonite.de/schmuck/pranatropfen/";
+  };
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
@@ -32,7 +36,7 @@ export const HeroSection = () => {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gold-100/60 border border-gold-200/50 mb-4 sm:mb-6 animate-fade-in">
               <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gold-600" />
-              <span className="text-xs sm:text-sm font-medium text-gold-700">Schmuck</span>
+              <span className="text-xs sm:text-sm font-medium text-gold-700">Handgefertigter Schmuck</span>
             </div>
             
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold mb-4 sm:mb-6 text-foreground leading-tight animate-fade-in-up">
@@ -40,17 +44,29 @@ export const HeroSection = () => {
               <span className="text-gold-600">Energie zum Tragen</span>
             </h1>
             
-            <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 text-muted-foreground leading-relaxed max-w-xl mx-auto lg:mx-0 animate-fade-in-up" style={{ animationDelay: "200ms" }}>
+            <p className="text-base sm:text-lg lg:text-xl mb-4 sm:mb-6 text-muted-foreground leading-relaxed max-w-xl mx-auto lg:mx-0 animate-fade-in-up" style={{ animationDelay: "200ms" }}>
               Handgefertigter Orgonit-Schmuck mit echten Edelsteinen. 
               Dein achtsamer Begleiter für innere Balance und positive Schwingung.
             </p>
+
+            {/* Social Proof */}
+            <div className="flex items-center justify-center lg:justify-start gap-4 mb-6 sm:mb-8 animate-fade-in" style={{ animationDelay: "300ms" }}>
+              <div className="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-gold-500 text-gold-500" />
+                ))}
+              </div>
+              <span className="text-sm text-muted-foreground">
+                <span className="font-semibold text-foreground">4,8/5</span> aus über 1.300 Bewertungen
+              </span>
+            </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start items-center animate-fade-in" style={{ animationDelay: "400ms" }}>
               <Button
                 variant="default"
                 size="lg"
-                onClick={() => scrollToSection("story")}
+                onClick={goToShop}
                 className="w-full sm:w-auto shadow-glow"
               >
                 Kollektion entdecken

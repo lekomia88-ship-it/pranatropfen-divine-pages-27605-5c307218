@@ -1,8 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { Instagram } from "lucide-react";
+import { Instagram, ArrowRight } from "lucide-react";
 import communityBg from "@/assets/community-bg.jpg";
 
 export const CommunitySection = () => {
+  const goToShop = () => {
+    window.location.href = "https://www.oz-orgonite.de/schmuck/pranatropfen/";
+  };
+
   return (
     <section className="py-12 sm:py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
@@ -22,7 +26,7 @@ export const CommunitySection = () => {
             <img
               src={communityBg}
               alt="OZ Orgonite Community – zufriedene Kunden"
-              className="w-full h-[350px] sm:h-[420px] object-cover"
+              className="w-full h-[300px] sm:h-[380px] lg:h-[420px] object-cover"
             />
           </div>
 
@@ -32,18 +36,26 @@ export const CommunitySection = () => {
               Über <span className="text-gold-600">20.000</span> begeisterte Kunden
             </p>
             
-            <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-4 max-w-lg mx-auto lg:mx-0">
               Lass dich inspirieren, teile deine Erfahrungen und verbinde dich mit Gleichgesinnten.
             </p>
             
-            <p className="text-base text-muted-foreground leading-relaxed mb-8">
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-6 sm:mb-8 max-w-lg mx-auto lg:mx-0">
               Finde deinen persönlichen Pranatropfen® und überzeuge dich selbst 
               von der Schönheit dieser einzigartigen Energie-Kunst.
             </p>
 
-            {/* Instagram CTA */}
-            <div className="space-y-4">
-              <p className="text-gold-600 font-semibold">@orgonites_of_oz</p>
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-6">
+              <Button
+                variant="default"
+                size="lg"
+                onClick={goToShop}
+                className="shadow-glow"
+              >
+                Pranatropfen® entdecken
+                <ArrowRight className="w-4 h-4" />
+              </Button>
               <Button
                 variant="outline"
                 size="lg"
@@ -57,7 +69,7 @@ export const CommunitySection = () => {
                   className="flex items-center gap-2"
                 >
                   <Instagram className="w-5 h-5" />
-                  Folge uns auf Instagram
+                  @orgonites_of_oz
                 </a>
               </Button>
             </div>
