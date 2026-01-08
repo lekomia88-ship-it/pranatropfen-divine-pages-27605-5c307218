@@ -11,7 +11,7 @@ const features: Feature[] = [
   { icon: Heart, label: "Handmade", description: "Jedes Stück ein Unikat" },
   { icon: Gem, label: "Echte Edelsteine", description: "Sorgfältig ausgewählt" },
   { icon: Sparkles, label: "Aktiviert", description: "Energetisch geladen" },
-  { icon: Truck, label: "Gratis Versand", description: "Schneller Versand" },
+  { icon: Truck, label: "Gratis Versand", description: "ab 70€ gratis" },
 ];
 
 export const FeatureBanner = () => {
