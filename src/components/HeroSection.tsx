@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, Star } from "lucide-react";
+import { ArrowRight, Heart, Star } from "lucide-react";
 import heroImage from "@/assets/hero-jewelry-1.jpg";
 
 export const HeroSection = () => {
@@ -35,8 +35,8 @@ export const HeroSection = () => {
           <div className="order-2 lg:order-2 text-center lg:text-left">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gold-100/60 border border-gold-200/50 mb-4 sm:mb-6 animate-fade-in">
-              <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gold-600" />
-              <span className="text-xs sm:text-sm font-medium text-gold-700">Handgefertigter Schmuck</span>
+              <Heart className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gold-600" />
+              <span className="text-xs sm:text-sm font-medium text-gold-700">Handmade</span>
             </div>
             
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold mb-4 sm:mb-6 text-foreground leading-tight animate-fade-in-up">
