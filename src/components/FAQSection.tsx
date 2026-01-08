@@ -1,9 +1,3 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { SacredTriangles } from "./SacredGeometry";
 import { HelpCircle, ArrowRight } from "lucide-react";
 
@@ -84,37 +78,34 @@ export const FAQSection = () => {
             </div>
           </div>
 
-          {/* Right: FAQ Accordion */}
-          <div className="md:col-span-3">
-            <Accordion type="single" collapsible className="space-y-3">
-              {faqs.map((faq, index) => (
-                <AccordionItem
-                  key={index}
-                  value={`item-${index}`}
-                  className="border border-gold-100/80 rounded-2xl px-6 bg-card shadow-sm hover:shadow-md transition-all duration-300 data-[state=open]:shadow-md data-[state=open]:border-gold-200/80"
-                >
-                  <AccordionTrigger className="text-left text-base font-semibold text-foreground hover:text-gold-600 transition-colors py-5 hover:no-underline gap-4">
-                    {faq.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed pb-5 text-sm">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-
-            {/* Mobile Contact CTA */}
-            <div className="md:hidden text-center mt-8">
-              <a
-                href="https://www.oz-orgonite.de/kontakt"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-gold-300 text-gold-700 font-medium hover:bg-gold-50 transition-colors text-sm"
+          {/* Right: FAQ Cards (always expanded) */}
+          <div className="md:col-span-3 space-y-3">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="border border-gold-200/80 rounded-2xl px-6 py-5 bg-card shadow-sm"
               >
-                Noch Fragen? Kontaktiere uns
-                <ArrowRight className="w-4 h-4" />
-              </a>
-            </div>
+                <h3 className="text-base font-semibold text-foreground mb-2">
+                  {faq.question}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed text-sm">
+                  {faq.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Mobile Contact CTA */}
+          <div className="md:hidden text-center mt-8 md:col-span-5">
+            <a
+              href="https://www.oz-orgonite.de/kontakt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-gold-300 text-gold-700 font-medium hover:bg-gold-50 transition-colors text-sm"
+            >
+              Noch Fragen? Kontaktiere uns
+              <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
         </div>
       </div>
