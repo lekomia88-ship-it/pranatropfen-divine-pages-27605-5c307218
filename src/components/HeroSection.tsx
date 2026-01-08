@@ -50,7 +50,7 @@ export const HeroSection = () => {
             </p>
 
             {/* Social Proof */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2 sm:gap-4 mb-6 sm:mb-8 animate-fade-in" style={{ animationDelay: "300ms" }}>
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2 sm:gap-4 mb-4 sm:mb-5 animate-fade-in" style={{ animationDelay: "300ms" }}>
               <div className="flex items-center gap-0.5">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-gold-500 text-gold-500" />
@@ -59,6 +59,18 @@ export const HeroSection = () => {
               <span className="text-sm text-muted-foreground text-center">
                 <span className="font-semibold text-foreground">4,8/5</span> aus über 1.300 Bewertungen
               </span>
+            </div>
+
+            {/* USP Pills */}
+            <div className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3 mb-6 sm:mb-8 animate-fade-in" style={{ animationDelay: "350ms" }}>
+              {["Echte Edelsteine", "Orgonit-Wirkung", "Made in Germany"].map((usp) => (
+                <span
+                  key={usp}
+                  className="px-3 sm:px-4 py-1.5 rounded-full bg-beige-100/80 border border-gold-200/50 text-xs sm:text-sm text-foreground font-medium"
+                >
+                  {usp}
+                </span>
+              ))}
             </div>
 
             {/* CTA Buttons */}
