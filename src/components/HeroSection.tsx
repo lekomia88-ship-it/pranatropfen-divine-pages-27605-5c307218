@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart, Star } from "lucide-react";
-import heroImage from "@/assets/hero-jewelry-1.jpg";
+import heroImage from "@/assets/pranatropfen-hand-real.jpg";
 
 export const HeroSection = () => {
   const goToShop = () => {
