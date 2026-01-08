@@ -49,14 +49,6 @@ const Index = () => {
         <section id="pranatropfen-faq" data-section="faq">
           <FAQSection />
         </section>
-        
-        <section id="pranatropfen-newsletter" data-section="newsletter">
-          <NewsletterSection />
-        </section>
-        
-        <section id="pranatropfen-usps-footer" data-section="usps-footer">
-          <FeatureBanner />
-        </section>
       </div>
     </main>
   );

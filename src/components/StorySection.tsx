@@ -1,19 +1,12 @@
 import { SunSymbol } from "./CelestialSymbols";
-import { Sparkles, Heart, Globe, Leaf } from "lucide-react";
-import { LucideIcon } from "lucide-react";
+import { Eye } from "lucide-react";
 import modelImage from "@/assets/model-jewelry-1.jpg";
 import modelImage2 from "@/assets/model-jewelry-2.jpg";
 
-interface Feature {
-  icon: LucideIcon;
-  label: string;
-}
-
-const features: Feature[] = [
-  { icon: Sparkles, label: "Mit Liebe gefertigt" },
-  { icon: Globe, label: "Made in Germany" },
-  { icon: Heart, label: "Einzigartiges Design" },
-  { icon: Leaf, label: "Natürliche Energie" },
+const features = [
+  "Made in Germany",
+  "Einzigartiges Design",
+  "Natürliche Energie",
 ];
 
 export const StorySection = () => {
@@ -30,7 +23,7 @@ export const StorySection = () => {
           <div className="order-1 lg:order-2 text-center lg:text-left w-full max-w-xl mx-auto lg:max-w-none">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-100/60 border border-gold-200/50 text-gold-700 text-sm font-medium mb-5 sm:mb-6">
-              <SunSymbol className="w-4 h-4" />
+              <Eye className="w-4 h-4" />
               <span>Unsere Vision</span>
             </div>
 
@@ -55,15 +48,14 @@ export const StorySection = () => {
             </p>
 
             {/* Feature Pills */}
-            <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-2 sm:justify-center lg:justify-start">
-              {features.map((feature, index) => (
-                <div 
-                  key={index}
-                  className="flex items-center justify-center sm:justify-start gap-1.5 px-3 py-2 rounded-full bg-card border border-gold-200/50 text-foreground text-xs font-medium hover:bg-gold-50 transition-colors"
+            <div className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3">
+              {features.map((feature) => (
+                <span
+                  key={feature}
+                  className="px-3 sm:px-4 py-1.5 rounded-full bg-beige-100/80 border border-gold-200/50 text-xs sm:text-sm text-foreground font-medium"
                 >
-                  <feature.icon className="w-3.5 h-3.5 text-gold-500 flex-shrink-0" />
-                  <span className="whitespace-nowrap">{feature.label}</span>
-                </div>
+                  {feature}
+                </span>
               ))}
             </div>
           </div>
