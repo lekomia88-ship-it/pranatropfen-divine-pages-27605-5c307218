@@ -2,6 +2,7 @@ import { SunSymbol } from "./CelestialSymbols";
 import { Eye } from "lucide-react";
 import modelImage from "@/assets/model-jewelry-1.jpg";
 import modelImage2 from "@/assets/model-jewelry-2.jpg";
+import heroJewelryImage from "@/assets/hero-jewelry-1.jpg";
 
 const features = [
   "Made in Germany",
@@ -61,10 +62,10 @@ export const StorySection = () => {
           </div>
 
           {/* Images - appears SECOND on mobile/tablet */}
-          <div className="order-2 lg:order-1 relative w-full max-w-[320px] sm:max-w-sm md:max-w-md lg:max-w-full mx-auto lg:mx-0">
+          <div className="order-2 lg:order-1 relative w-full max-w-[360px] sm:max-w-md md:max-w-lg lg:max-w-full mx-auto lg:mx-0">
             <div className="grid grid-cols-12 gap-3 sm:gap-4">
               {/* Main large image */}
-              <div className="col-span-7 relative">
+              <div className="col-span-5 relative">
                 <div className="aspect-[3/4] rounded-xl sm:rounded-2xl overflow-hidden shadow-lg sm:shadow-xl border border-gold-200/30">
                   <img
                     src={modelImage}
@@ -72,12 +73,21 @@ export const StorySection = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                {/* Decorative corner accent - hidden on tablet and below */}
-                <div className="hidden lg:block absolute -bottom-3 -right-3 w-24 h-24 border-2 border-gold-300/40 rounded-2xl -z-10" />
               </div>
               
-              {/* Smaller offset image */}
-              <div className="col-span-5 pt-6 sm:pt-12 lg:pt-16">
+              {/* Middle image - hero jewelry box */}
+              <div className="col-span-4 pt-4 sm:pt-8">
+                <div className="aspect-[4/5] rounded-xl sm:rounded-2xl overflow-hidden shadow-md sm:shadow-lg border border-gold-200/30">
+                  <img
+                    src={heroJewelryImage}
+                    alt="Pranatropfen in eleganter Geschenkbox"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              
+              {/* Third smaller image */}
+              <div className="col-span-3 pt-8 sm:pt-14 lg:pt-16">
                 <div className="aspect-[3/4] rounded-xl sm:rounded-2xl overflow-hidden shadow-md sm:shadow-lg border border-gold-200/30">
                   <img
                     src={modelImage2}
@@ -87,6 +97,8 @@ export const StorySection = () => {
                 </div>
               </div>
             </div>
+            {/* Decorative corner accent - hidden on tablet and below */}
+            <div className="hidden lg:block absolute -bottom-3 -left-3 w-24 h-24 border-2 border-gold-300/40 rounded-2xl -z-10" />
           </div>
         </div>
       </div>
